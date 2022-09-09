@@ -64,8 +64,16 @@ header ul li a {
     font-weight: 500;
     position: relative;
     padding: 0 20px;
-    transition: 0.7s;
+    transition: 0.5s;
+    cursor: pointer;
 }
+
+/*AGREGADO DE TRANSICION PARA LAS OPCIONES EN MENU (fecha: 9/9) */
+.menu li a:hover {
+    color: #eb5e28;
+    font-size: 20px;
+}
+
 
 main {
     grid-area: main;
@@ -114,7 +122,6 @@ main {
     display: flex;
     justify-content: space-around;  
     text-align: center;
-
 }
 
 .presentacionPrincipal p {
