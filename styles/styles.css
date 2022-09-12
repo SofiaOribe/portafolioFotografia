@@ -3,16 +3,237 @@
     margin: 0%;
     padding: 0%;
     transition: 0.1ms;
-    font-family: 'Bodoni Moda', serif;
-    
+}
+
+:root {
+    /* COLOR */
+    --darkI: #98979F;
+    --darkII: #A29FA8 ;
+    --intermedio: #B2AFB6 ;
+    --light-I: #D6DBE1;
+    --light-II: #EBE9EA;
+    --text-color: #000 ;
+    --titles-decoration: #eb5e28;
+    --color-navBar: #ffffff;
+
+    /* FONT-SIZES */
+    --font-small: 100;
+    --font-medium: 500;
+    --font-large: 900;
+
+    /* FONT-FAMILY */
+    --font-titles: 'Bodoni Moda', serif;
 }
 
 body {
  overflow: auto;
- background: #FBF4EE;
+ background-color: var(--light-II);
+}
+
+.botonMenu-Conten { /*button -> span (elemento icono)*/
+    padding: 0%;
+    border: none;
+}
+
+.title {
+    font-size: var(--font-large);   
+    font-family: var(--font-titles);
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -10px;
+    color: #ffffff;
 }
 
 
+.barraDesplegable-Menu {
+    background-color: rgba(251, 244, 238, 0.5);
+    backdrop-filter: blur(4px);
+    color: var(--color-navBar);
+}
+.desplegable-options {
+    background-color: rgba(251, 244, 238, 0);
+    border: none;
+}
+.options {
+    color: var(--color-navBar);
+}
+/*--------------------------------------------------------------------*/
+
+.contenFila-Carousel {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textoCarousel-Left {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textoCarousel-Left p {
+    width: 300px ;
+    color: var(--titles-decoration);
+}
+.divImgCont-Carosuel {
+    display: flex;
+    justify-content: center;
+}
+.divImgCont-Carosuel div{
+    width: 500px;
+}
+.carousel-indicators {
+    margin: 0%;
+}
+
+.titleCarousel a{
+    text-decoration: none;
+}
+
+.titleCarousel p{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 52%;
+    margin-right: 30%;
+    padding: 0%;
+    font-family: var(--font-titles);
+    font-weight: 900;
+    font-size: 70px;
+    color: var(--titles-decoration) ;
+
+}
+
+/*--------------------------------------------------------------------*/
+
+.imagenFondo {
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:30rem;
+    position: relative;
+}
+
+.img-fondo {
+    background-image: url("../image/pieBiblio.jpg");
+    position: relative;
+}
+.imagenFondo  {
+    display: flex;
+    justify-content: left;
+    align-items:  center;
+    padding-left: 40px;
+}
+
+/*--------------------------------------------------------------------*/
+
+
+.abarcadoUno {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--titles-decoration);
+}
+.contenColumnas-Row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.primeraSeccion-Footer {
+    padding: 50px;
+}
+.segundaSeccion-Footer {
+    padding: 50px;
+}
+
+.formIndex fieldset{
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.divPiepagina {
+    text-align: center;
+}
+.divPiepagina ::placeholder {
+    color: #000000;
+    font-family: var(--font-titles);
+}
+
+#piePaginaNewsletter {
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+#suscribir {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #eb5e28;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: var(--font-titles);
+    border-top: transparent;
+    border-color: #000000;
+    border-right: none;
+    border-left: none;
+}
+
+#piePaginaCorreo {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;
+    justify-content: left;
+}
+
+#titleRedes {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.RedesPrincipal {
+    margin-top: 20px;
+    text-align: center;
+}
+.RedesPrincipal a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 5px;
+    font-weight: 100;
+    font-size: 10px;
+}
+
+.ultimoBorde {
+    background-color: #222222;
+    box-shadow: 2px 2px 40px #000000;
+} 
+#copyright {
+    margin-top: 50px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.iconosRedes {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 5px;
+}
+
+
+ /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/
+/* 
 .grid {
     display: grid;
     grid-template-areas: 
@@ -20,13 +241,13 @@ body {
     "main main main"
     "footer footer footer";
 }
-
+ */
 
 
 /* PAGINA PRINCIPAL */
 
 /* Barra menú */    
-
+/* 
 header {
     grid-area: header;
     position: fixed;
@@ -66,10 +287,10 @@ header ul li a {
     padding: 0 20px;
     transition: 0.5s;
     cursor: pointer;
-}
+} */
 
 /*AGREGADO DE TRANSICION PARA LAS OPCIONES EN MENU (fecha: 9/9) */
-.menu li a:hover {
+/* .menu li a:hover {
     color: #eb5e28;
     font-size: 20px;
 }
@@ -98,11 +319,11 @@ main {
 
 .ir {
     text-decoration: none ;
-}
+} */
 
 /*---------------------------------------------------------*/
 
-
+/* 
 
 .fondo {
     position: relative;
@@ -133,10 +354,10 @@ main {
     width: 40px;
     height: 40px;
 }
-
+ */
 
 /*----------------------------------------------*/
-.barraFrase {
+/* .barraFrase {
     text-align: center;
     padding: 10px;
     margin-top: 170px;
@@ -163,14 +384,14 @@ h2:hover span:nth-child(2) {
 h2:hover span:nth-child(1):after {
     content: "DESTACADOS";
 }
-
+ */
 
 
 /*----------------------------------------------*/
 
 
 /* Apartado de imagenes de opciones */
-
+/* 
 
 .imagenesDeInteraccion {
     margin-top: 100px;
@@ -237,7 +458,7 @@ h2:hover span:nth-child(1):after {
     font-weight: 800px;
     transition: all 500ms ease-out;
     color: #FBF4EE;
-}
+} */
 
 
 /*------------------------------------*/
@@ -245,7 +466,7 @@ h2:hover span:nth-child(1):after {
 
 
 /* PARALLAX */
-
+/* 
 
 .parallax {
     margin-top: 150px;
@@ -325,11 +546,11 @@ h2:hover span:nth-child(1):after {
     font-size: 16px;
     color: #fffcf2;
 }
-
+ */
 /*------------------------------------*/
 
 /* PIE PAGINA PRINCIPAL */
-footer {
+/* footer {
     grid-area: footer;
 }
 .piePagina{
@@ -413,19 +634,19 @@ form fieldset{
     color: #000000;
     font-weight: 100;
 }
+*/
 
 /* Titulo de Secciones de Páginas */
 
-.titlePages {
+/* .titlePages {
     color: #000000;
     text-align: center;
     margin-top: 130px;
-}
-
+} */
 /* -------------------------------------------------------------------*/
 
 /* PORTAFOLIO */
-
+/* 
 .seccionUno {
     display: flex;
     justify-content: space-around;
@@ -505,13 +726,13 @@ form fieldset{
 }
 .iconosRedesPortafolio {
     text-align: center;
-}
+} */
 /* -------------------------------------------------------------------*/
 
 
 /* BIBLIOGRAFIA */
 
-
+/* 
 
 .bibliografiaDescripcion {
     text-align: center;
@@ -547,9 +768,9 @@ form fieldset{
     width: 400px;
     float: right;
 }
-
+ */
 /*----------------------------------------------------------------------*/
-div .botonEnviar {
+/* div .botonEnviar {
     margin-top: 20px;
     color: #FBF4EE;
     background-color: #03071E;
@@ -579,12 +800,12 @@ div .botonEnviar:hover {
     color: #fffcf2;
     letter-spacing: 2px;
     font-family: 'Times New Roman', Times, serif;
-}
+} */
 /*----------------------------------------------------------------------*/
 /* CREAR CUENTA */
 
 
-.formCrearCuenta form {
+/* .formCrearCuenta form {
     display: flex;
     justify-content: center;
     margin-top: 90px;
@@ -592,9 +813,7 @@ div .botonEnviar:hover {
 ::placeholder {
     text-align: left;
     color: black;
-    /* font-family: WranglerV2; */
 }
-/*1*/
 .divCrearCuenta label {
     font-size: 14px;
     color: #000000;
@@ -609,13 +828,13 @@ div .botonEnviar:hover {
     border-right: none;
     border-left: none;
 }
-
+ */
 
 
 /*----------------------------------------------------------------------*/
 
 /* CONTACTO */
-
+/* 
 .contenidoDeContacto {
     margin-top: 90px;
 }
@@ -691,12 +910,12 @@ div .botonEnviar:hover {
     color: #03071E;
     
 }
-
+ */
 
 /*----------------------------------------------------------------------*/
 
 /* INGRESAR */
-.seccionIngresar {
+/* .seccionIngresar {
     display: flex;
     justify-content: center;
     margin-top: 90px;
@@ -715,12 +934,12 @@ div .botonEnviar:hover {
     border-color: #000000;
     border-right: none;
     border-left: none;
-}
+} */
 
 /*----------------------------------------------------------------------*/
 
 /*MODEL*/
-
+/* 
 @media screen and (max-width: 480px) and (min-width: 320px){
     .grid {
         display: grid;
@@ -765,14 +984,14 @@ div .botonEnviar:hover {
     main {
         grid-area: main;
         width: 100%;
-    }
+    } */
 
     /*--------------------------------------*/
-    .fondo img {
+   /*  .fondo img {
         width: 100%;
-    }
+    } */
     /*--------------------------------------*/
-
+/* 
     .presentacionPrincipal{
         margin-right: 0%;
         width: 100%;
@@ -789,11 +1008,11 @@ div .botonEnviar:hover {
         margin-top: 30px ;
         width: 40px;
         height: 40px;
-    }
+    } */
     
 
     /*--------------------------------------*/
-
+/* 
     .imagenesDeInteraccion {
         margin-top: 100px;
         display: flex;
@@ -827,10 +1046,10 @@ div .botonEnviar:hover {
     
 
 
-
+ */
 /*--------------------------------------*/
 
-    
+ /*    
 .parallax {
     margin-top: 150px;
 }
@@ -891,9 +1110,9 @@ div .botonEnviar:hover {
     display: flex;
     flex-direction: column;
 }
-
+ */
 /*--------------------------------------*/
-
+/* 
      footer {
         grid-area: footer;
     }
@@ -924,14 +1143,14 @@ div .botonEnviar:hover {
         display: flex;
         justify-content: center;
     }
-    
+     */
 /*--------------------------------------*/
 
 
 
 /* PORTAFOLIO */
 
-.portafolioSection {
+/* .portafolioSection {
     width: 100%;
     height: 100%;
     display: flex;
@@ -948,11 +1167,11 @@ div .botonEnviar:hover {
 .portafolioSection  section:hover > .interaccionPortafolio h3 {
     margin-top: 60%;
 }
-
+ */
 /*--------------------------------------*/
 
 /*BIBLIOGRAFIA*/
-.bibliografiaDescripcion {
+/* .bibliografiaDescripcion {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -975,11 +1194,11 @@ div .botonEnviar:hover {
     margin-block-end: 30px;
 }
 
-
+ */
 
 /*--------------------------------------*/
 /*CONTACTO*/
-
+/* 
 .contenidoDeContacto {
     margin-top: 90px;
 }
@@ -1013,22 +1232,22 @@ div .botonEnviar:hover {
     margin-block-end: 50px;
 }
 
-
+ */
 
 /*--------------------------------------*/
 /* CREAR CUENTA */
-
+/* 
 .formCrearCuenta form {
     width: 100%;
     display: flex;
     justify-content: center;
-}
+} */
 /*---------------------------------------*/
 
 /* INGRESAR */
-.seccionIngresar {
+/* .seccionIngresar {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-}
+} */
