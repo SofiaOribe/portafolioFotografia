@@ -193,7 +193,6 @@ body {
 #titleRedes {
     display: flex;
     justify-content: center;
-    color: #000000;
     font-weight: 100;
     font-size: 20px;
 }
@@ -212,7 +211,7 @@ body {
 
 .ultimoBorde {
     background-color: #222222;
-    box-shadow: 2px 2px 40px #000000;
+    box-shadow: 0 0 40px #000000;
 } 
 #copyright {
     margin-top: 50px;
@@ -296,6 +295,42 @@ body {
     width: 500px;
     padding: 0%;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.contBiblio-Section {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.contBiblio-Section div {
+    display: flex;
+    justify-content: center;
+}
+.imagenesBiblio {
+    width: 500px;
+}
+
+#parrafoBibliografia {
+    width: 300px;
+    margin: 0%;
+}
+.rowBiblio {
+    margin-top: 100px;
+    background-color: #222222;
+    box-shadow: 0 0 40px #000000;
+    
+}
+.demasSecciones h4 {
+    color: var(--color-navBar);
+}
+.demasSecciones a {
+    color: var(--color-navBar);
+}
+
+
 
 
  /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/

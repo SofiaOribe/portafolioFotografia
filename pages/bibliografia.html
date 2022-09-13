@@ -4,18 +4,129 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+         <!-- CSS only -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="stylesheet" href="../styles/styles.css">
         <link rel="shortcut icon" href="../image/favicon/letraEme.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700&display=swap" rel="stylesheet">
 
-            
         <title>Bibliografía</title>
 </head>
 
-    <body class="grid">
+    <body class="container-fluid">
+
         <header>
+            <div class="row">
+                <div class="col">
+
+                    <nav class="navbar fixed-top">
+
+                        <div class="container-fluid">
+
+                          <a class="navbar-brand" href="./index.html"><h1 class="title">MARKSIM</h1></a>
+
+                          <button class="navbar-toggler botonMenu-Conten" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                          <div class="offcanvas offcanvas-end barraDesplegable-Menu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body">
+
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <li class="nav-item ">
+                                  <a class="nav-link options" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle options" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portafolio</a>
+                                    <ul class="dropdown-menu desplegable-options">
+                                        <li><a class="dropdown-item options" href="./portafolio.html">Portafolio</a></li>
+                                      <li><a class="dropdown-item options" href="./portafolioestudio.html">Estudio</a></li>
+                                      <li><a class="dropdown-item options" href="./portafolioblancoynegro.html">Blanco y negro</a></li>
+                                      <li><a class="dropdown-item options" href="./portafoliomodelartist.html">Modelo Artista</a></li>
+                                      <li><a class="dropdown-item options" href="./portafoliourbano.html">Urbano</a></li>
+                                      <li><a class="dropdown-item options" href="./portafoliotwo.html">Dos</a></li>
+                                      <li><a class="dropdown-item options" href="./portafolioaventura.html">Aventura</a></li>
+                                    </ul>
+                                  </li>
+                                <li class="nav-item">
+                                  <a class="nav-link options" href="./bibliografia.html">Acerca de</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link options" href="./contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link options" href="./ingresar.html">Iniciar sesion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link options" href="./crearcuenta.html">Crear Cuenta</a>
+                                </li>
+
+                              </ul>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="row contenidoBiblio">
+
+                <section class="row contBiblio-Section">
+
+                    <div class="col-xl-6 col-md-6 col-sm-12">
+                        <p id="parrafoBibliografia"> Marksim Blanck <br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus exercitationem inventore perspiciatis ab tempore sunt, id dolores dolor ipsa ex. Culpa repellendus saepe cum, similique sit ipsa doloremque doloribus alias. Accusamus tempora voluptates facilis? Accusamus, ducimus consectetur minus ea quas corrupti nulla, enim, earum vel iusto esse sequi. Dolorem, dignissimos eius. Ratione, molestiae nesciunt eum animi, veritatis sapiente sint labore cum quaerat fuga odit. Voluptas incidunt beatae atque maxime sint, distinctio fugit aliquam explicabo deleniti, eaque amet eligendi modi, consequatur vitae quas placeat in non. Recusandae temporibus error iusto illum ab nobis labore id modi debitis dolorum minus maxime repellat, quidem asperiores? Numquam sed at quae ut illo laboriosam cupiditate veniam ullam aliquam nemo totam, officia nostrum, blanditiis libero voluptates fugit accusantium doloribus ipsa itaque doloremque! Sapiente quam ipsa quae et ea nesciunt temporibus velit, error, eaque aliquid, excepturi maiores accusamus labore magni ducimus nihil cumque minima quas odio. Voluptatem.</p>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-12 imagenesBiblio">
+                        <img src="../image/marksim.jpg" class="w-100" alt="Imagen Marksim">
+                    </div>
+
+                </section>
+
+                <section class="row contBiblio-Section">
+                    <div class="col-xl-6 col-md-6 col-sm-12 imagenesBiblio">
+                        <img src="../image/markismdos.jpeg" class="w-100 alt="Imagen Marksim">
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-12">
+                        <p id="parrafoBibliografia"> Title <br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus exercitationem inventore perspiciatis ab tempore sunt, id dolores dolor ipsa ex. Culpa repellendus saepe cum, similique sit ipsa doloremque doloribus alias. Accusamus tempora voluptates facilis? Accusamus, ducimus consectetur minus ea quas corrupti nulla, enim, earum vel iusto esse sequi. Dolorem, dignissimos eius. Ratione, molestiae nesciunt eum animi, veritatis sapiente sint labore cum quaerat fuga odit. Voluptas incidunt beatae atque maxime sint, distinctio fugit aliquam explicabo deleniti, eaque amet eligendi modi, consequatur vitae quas placeat in non. Recusandae temporibus error iusto illum ab nobis labore id modi debitis dolorum minus maxime repellat, quidem asperiores? Numquam sed at quae ut illo laboriosam cupiditate veniam ullam aliquam nemo totam, officia nostrum, blanditiis libero voluptates fugit accusantium doloribus ipsa itaque doloremque! Sapiente quam ipsa quae et ea nesciunt temporibus velit, error, eaque aliquid, excepturi maiores accusamus labore magni ducimus nihil cumque minima quas odio. Voluptatem.</p>
+                    </div>
+
+                </section>
+
+
+            </section>
+        </main>
+
+        <footer>
+
+            <section class="row rowBiblio">
+                    <div class="col segundaSeccion-Footer">
+                        <section class="bloqueDerechoPie demasSecciones">
+                            <h4 id="titleRedes">SÍGUEME EN MIS REDES</h4>
+                            <div class="RedesPrincipal">
+                                <a href="#">FACEBOOK</a>
+                                <a href="#">INSTAGRAM</a>
+                                <a href="#">PINTEREST</a>
+                                <a href="#">APP MOVIL</a>
+                            </div>
+                        </section>
+                    </div>
+            </section>
+
+        </footer>
+
+        <!-- <header>
             <nav>
                 <ul class="menu">
                     <li><a  href="../index.html">INICIO</a></li>
@@ -40,11 +151,11 @@
 
                 <div class="descripcionDos">
                     <img muted autoplay loop src="../image/markismdos.jpeg" alt="Segunda imagen de Marksim"></img>
-                    <!-- TUVE QUE SACAR EL VIDEO PORQUE PESABA DEMASIADO--->
+                    TUVE QUE SACAR EL VIDEO PORQUE PESABA DEMASIADO-
                     <p id="parrafoBibliografiaDos"> Title <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos assumenda molestiae beatae ipsum mollitia exercitationem alias a voluptatum soluta non, atque ipsam doloribus officiis nihil architecto laudantium, natus vitae esse magni, omnis autem distinctio velit? Unde vitae dignissimos minus, impedit enim doloremque repellendus reprehenderit facere quis autem, explicabo labore reiciendis magnam facilis, quidem ducimus. Voluptatibus illum ducimus tenetur, excepturi eaque obcaecati mollitia quia eligendi itaque? Eveniet adipisci deserunt nesciunt ducimus harum ipsa sapiente distinctio eius, temporibus doloremque dolorem quisquam quaerat aliquam veniam et, cupiditate, labore quos deleniti! Perspiciatis fugit illum, inventore optio incidunt iure adipisci nulla quo veritatis reprehenderit. Ipsa vel delectus natus, eveniet nisi deserunt harum, corrupti sint esse quo fugit, illo distinctio eos hic sapiente officiis. Odio ab molestiae temporibus repellendus magni voluptatum corrupti reprehenderit iusto voluptates voluptas minus similique ullam vel assumenda sunt eos vitae, aliquam vero, culpa voluptatibus quo. Qui fugit esse tempore aut veniam et.</p>
                 </div>
-        </main>
-        <footer>
+        </main> -->
+        <!-- <footer>
             <section class="barraFinal">
                 <h4 id="titleRedesPortafolio">Sígueme en mis redes</h4>
                 <div class="iconosRedesPortafolio">
@@ -54,6 +165,10 @@
                     <a href="#"><img class="iconosRedes" src="../iconos/telefono-inteligente.png" alt="icono de aplicación movil"></a>
                 </div>
             </section>
-        </footer>
+        </footer> -->
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </body>
 </html>
