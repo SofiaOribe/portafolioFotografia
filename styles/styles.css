@@ -34,6 +34,10 @@ body {
 
 .botonMenu-Conten { /*button -> span (elemento icono)*/
     border: none;
+    padding: 1px;
+    margin: 1px;
+    transition: all 500ms;
+    background-color: var(--light-II);
 }
 
 .title {
@@ -43,18 +47,27 @@ body {
     font-weight: bold;
     letter-spacing: -10px;
     color: #ffffff;padding: 0%;
+    transition: all 500ms;
 }
 
+header a h1:hover {
+    color: var(--text-color);
+}
+.offcanvas-body ul li a:hover {
+    color: var(--titles-decoration);
+}
 
 .barraDesplegable-Menu {
     background-color: rgba(251, 244, 238, 0.5);
     backdrop-filter: blur(4px);
     color: var(--color-navBar);
 }
+
 .desplegable-options {
     background-color: rgba(251, 244, 238, 0);
     border: none;
 }
+
 .options {
     color: var(--color-navBar);
 }
@@ -291,7 +304,7 @@ body {
     visibility: visible;
 }
 .portafolioSection  div:hover > .interaccionPortafolio h3 {
-    margin-top: 60%;
+    margin-top: 70%;
 }
 
 .portafolioSection  div:hover > img {
@@ -320,26 +333,35 @@ body {
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-.contBiblio-Section {
+.contenidoBiblio {
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.contBiblio-Section {
     text-align: center;
     display: flex;
-    justify-content: center;
-}
-.contBiblio-Section div {
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0%;
+    margin-bottom: 50px;
 }
 .imagenesBiblio {
     width: 500px;
 }
-
-#parrafoBibliografia {
-    width: 300px;
-    margin: 0%;
+.parrafosDiv {
+    width: 500px;
 }
+#parrafoBibliografia {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+
+/*FOOTER*/
 .rowBiblio {
     margin-top: 100px;
     background-color: #222222;
@@ -441,7 +463,7 @@ body {
     font-size: 15px;
     padding: 10px;
     cursor: pointer;
-    transition: all 400ms;   
+    transition: all 500ms;   
     font-family: var(--font-titles);
     font-weight: var(--font-large);
 }
@@ -475,7 +497,6 @@ body {
     border-color: #000000;
     border-right: none;
     border-left: none;
-
 }
 
 .boton {
@@ -486,9 +507,31 @@ body {
 
  /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/
 
+ /*CREAR CUENTA*/
 
+ .formCrearCuenta form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.CrearCuentaInput {
+    width: 100%;
+    background-color: var(--light-II);
+    color: #03071E;
+    font-size: 20px;
+    font-family: var(--font-titles);
+    font-weight: var(--font-large);
+    border-top: transparent;
+    border-color: #000000;
+    border-right: none;
+    border-left: none;
+}
 
+.divCrearCuenta label {
+    font-size: 10px;
+    color: #000000;
+}
 
  /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/
 /* 
