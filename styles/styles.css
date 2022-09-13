@@ -15,6 +15,7 @@
     --text-color: #000 ;
     --titles-decoration: #eb5e28;
     --color-navBar: #ffffff;
+    --color-botones: #222222 ;
 
     /* FONT-SIZES */
     --font-small: 100;
@@ -30,18 +31,18 @@ body {
  background-color: var(--light-II);
 }
 
+
 .botonMenu-Conten { /*button -> span (elemento icono)*/
-    padding: 0%;
     border: none;
 }
 
 .title {
     font-size: var(--font-large);   
     font-family: var(--font-titles);
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
     letter-spacing: -10px;
-    color: #ffffff;
+    color: #ffffff;padding: 0%;
 }
 
 
@@ -58,6 +59,14 @@ body {
     color: var(--color-navBar);
 }
 /*--------------------------------------------------------------------*/
+
+.imagenPrincipal-Div {
+    width: 100%;
+    padding: 0%;
+}
+
+/*--------------------------------------------------------------------*/
+
 
 .contenFila-Carousel {
     margin-top: 100px;
@@ -77,11 +86,12 @@ body {
     color: var(--titles-decoration);
 }
 .divImgCont-Carosuel {
+    width: 500px;
     display: flex;
     justify-content: center;
 }
 .divImgCont-Carosuel div{
-    width: 500px;
+    width: 100%
 }
 .carousel-indicators {
     margin: 0%;
@@ -125,7 +135,6 @@ body {
     display: flex;
     justify-content: left;
     align-items:  center;
-    padding-left: 40px;
 }
 
 /*--------------------------------------------------------------------*/
@@ -230,11 +239,24 @@ body {
     padding: 5px;
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.titlePages-Row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.titlePages {
+    color: var(--text-color);
+    font-family: var(--font-titles);
+
+}
+
+/*--------------------------------------------------------------------*/
+
+
 /*PORTAFOLIO*/
 
-.portafolioGral {
-    margin-top: 100px;
-}
 
 .portafolioGral div {
     display: flex;
@@ -300,7 +322,8 @@ body {
 
 
 .contBiblio-Section {
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -329,6 +352,140 @@ body {
 .demasSecciones a {
     color: var(--color-navBar);
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#loremContacto {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+}
+
+.contenidoDeContacto{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fieldsetContacto {   
+    border: none;
+}
+.bloqueContactoFormulario {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formContacto {
+    background-color: var(--light-II);
+    font-size: 20px;
+    font-family: var(--font-titles);
+    font-weight: var(--font-large);
+    border-top: transparent;
+    border-left: none;
+    border-right: none;
+    width: 50%;
+}
+.bloqueContactoFormulario label{
+    font-size: 10px;
+    margin-top: 0;
+}
+
+.bloqueContactoFormulario h6{
+    font-size: 10px;
+    font-weight: 100;
+}
+
+#textareaContacto {
+    display: flex;
+    background-color: var(--light-II);
+    margin-bottom: 1px;
+    padding: 0%;
+    height: 100px;
+    width: 99%;
+    border-color: #CECECE;
+    border-radius: 8px;
+}
+.segundoContenidoContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pieContacto {
+    margin-top: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 50px 0px 50px 0px;
+}
+
+.buttonsContactoIconos{
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 50px;
+}
+
+#numeroTelefono {
+    color: #03071E;
+    font-weight: var(--font-small);
+}
+
+.botonEnviar {
+    margin-top: 20px;
+    color: #FBF4EE;
+    background-color: var(--color-botones);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 400ms;   
+    font-family: var(--font-titles);
+    font-weight: var(--font-large);
+}
+
+.botonEnviar:hover {
+    background-color: var(--titles-decoration);
+    color: #FBF4EE;
+    border-color:var(--titles-decoration);
+}
+
+ /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/
+/* INGRESAR */
+.seccionIngresar {
+    display: flex;
+    justify-content: center;
+}
+
+.divIngresar label {
+    font-size: 10px;
+    color: #000000;
+}
+
+.IngresarInput {
+    width: 100%;
+    background-color: var(--light-II);
+    color: #03071E;
+    font-size: 20px;
+    font-family: var(--font-titles);
+    font-weight: var(--font-large);
+    border-top: transparent;
+    border-color: #000000;
+    border-right: none;
+    border-left: none;
+
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+
+ /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/
+
 
 
 
