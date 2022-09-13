@@ -230,6 +230,72 @@ body {
     margin: 40px;
     padding: 5px;
 }
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*PORTAFOLIO*/
+
+.portafolioGral {
+    margin-top: 100px;
+}
+
+.portafolioGral div {
+    display: flex;
+    justify-content: center;
+}
+.portafolioSection div {
+    width: 500px;
+    padding: 0%;
+    transition: all 500ms ease-out;
+}
+
+.portafolioSection div {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portafolioSection div .interaccionPortafolio {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 244, 238, 0.5);
+    backdrop-filter: blur(3px);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.portafolioSection  div:hover > .interaccionPortafolio {
+    opacity: 1;
+    visibility: visible;
+}
+.portafolioSection  div:hover > .interaccionPortafolio h3 {
+    margin-top: 60%;
+}
+
+.portafolioSection  div:hover > img {
+    transition: all 500ms ease-out;
+    transform: scale(1.2);
+}
+
+.portafolioSection div .interaccionPortafolio h3{
+    font-size: 60px;
+    font-family: var(--font-titles);
+    font-weight: 900;
+    letter-spacing: -5px;
+    transition: all 500ms ease-out;
+    color: var(--titles-decoration);
+    width: 100%;
+}
+
+.interaccionPortafolio a {
+    text-decoration: none;
+}
+
+.portafolioDiv-Img div{
+    width: 500px;
+    padding: 0%;
+}
 
 
  /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/
