@@ -9,7 +9,7 @@
     /* COLOR */
     --darkI: #98979F;
     --darkII: #A29FA8 ;
-    --intermedio: #B2AFB6 ;
+    --intermedio: #acc0d4 ;
     --light-I: #D6DBE1;
     --light-II: #EBE9EA;
     --text-color: #000 ;
@@ -32,13 +32,19 @@ body {
 }
 
 
+
 .botonMenu-Conten { /*button -> span (elemento icono)*/
     border: none;
-    padding: 1px;
-    margin: 1px;
+    padding: 2px;
+    margin: 10px;
     transition: all 500ms;
-    background-color: var(--light-II);
+    background-color: #ffffff65;
 }
+.botonMenu-Conten { /*button -> span (elemento icono)*/
+    color: #000;
+}
+
+
 
 .title {
     font-size: var(--font-large);   
@@ -71,16 +77,85 @@ header a h1:hover {
 .options {
     color: var(--color-navBar);
 }
-/*--------------------------------------------------------------------*/
 
-.imagenPrincipal-Div {
-    width: 100%;
-    padding: 0%;
+
+/*--------------------------------------------------------------------*/
+.historia {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: var(--intermedio);
+}
+
+/* AGREGADO DE TRANSICION */
+.historia-Div div{
+    display: flex;
+    border: none;
+    align-items: center;
+    text-align: center;
+    background-color: var(--intermedio);
+    border-radius: 5px;
+}
+
+.historia-Div div p {
+    transition: all 500ms;
+}
+
+.historia-Div div p:hover {
+    color: var(--titles-decoration);
+}
+
+.iconosCard {
+    color: var(--color-navBar);
+}
+
+
+.textCard {
+    color: var(--color-navBar);
+    font-size: 18px;
+}
+
+.contenidos-TEX {
+    display: flex;
+    flex-direction: column;
+}
+
+.textosH3-card h3{
+    color: var(--color-navBar);
+    font-size: 25px;
+    font-weight: 600;
 }
 
 /*--------------------------------------------------------------------*/
+.logosRow {
+    background-color: var(--intermedio);
+    box-shadow:  0 0 5px #000;
+}
 
+.logosImage-Div {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.logosImage-Div img{
+    height: 50px;
 
+}
+
+/*--------------------------------------------------------------------*/
+.carouselRow-Tile {
+    text-align: center;
+    margin-top: 10px;
+}
+.carouselRow-Tile h2{
+    font-weight: var(--font-small);
+    font-size: 45px;
+    color: var(--titles-decoration);
+    margin: 0%;
+    padding: 0%;
+}
 .contenFila-Carousel {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -91,15 +166,16 @@ header a h1:hover {
 .textoCarousel-Left {
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .textoCarousel-Left p {
-    width: 300px ;
+    width: 300px;
     color: var(--titles-decoration);
 }
 .divImgCont-Carosuel {
-    width: 500px;
+    width: 550px;
     display: flex;
     justify-content: center;
 }
@@ -126,29 +202,12 @@ header a h1:hover {
     font-weight: 900;
     font-size: 70px;
     color: var(--titles-decoration) ;
-
 }
 
 /*--------------------------------------------------------------------*/
 
-.imagenFondo {
-    background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:  cover;
-	height:30rem;
-    position: relative;
-}
 
-.img-fondo {
-    background-image: url("../image/pieBiblio.jpg");
-    position: relative;
-}
-.imagenFondo  {
-    display: flex;
-    justify-content: left;
-    align-items:  center;
-}
+
 
 /*--------------------------------------------------------------------*/
 
@@ -168,6 +227,9 @@ header a h1:hover {
 }
 .segundaSeccion-Footer {
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formIndex fieldset{
@@ -234,10 +296,13 @@ header a h1:hover {
 .ultimoBorde {
     background-color: #222222;
     box-shadow: 0 0 40px #000000;
-} 
+}
+.ultimoBorde-Div {
+    margin: 20px;
+}
 
 #copyright {
-    margin-top: 20px;
+    margin: 10px;
     color: #ffffff;
     font-size: 10px;
     font-weight: 100;
