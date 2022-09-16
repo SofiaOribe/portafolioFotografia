@@ -1,0 +1,600 @@
+* {
+    
+    margin: 0%;
+    padding: 0%;
+    transition: 0.1ms;
+}
+
+:root {
+    /* COLOR */
+    --darkI: #98979F;
+    --darkII: #A29FA8 ;
+    --intermedio: #acc0d4 ;
+    --light-I: #D6DBE1;
+    --light-II: #EBE9EA;
+    --text-color: #000 ;
+    --titles-decoration: #eb5e28;
+    --color-navBar: #ffffff;
+    --color-botones: #222222 ;
+
+    /* FONT-SIZES */
+    --font-small: 100;
+    --font-medium: 500;
+    --font-large: 900;
+
+    /* FONT-FAMILY */
+    --font-titles: 'Bodoni Moda', serif;
+}
+
+body {
+ overflow: auto;
+ background-color: var(--light-II);
+}
+
+
+
+.botonMenu-Conten { /*button -> span (elemento icono)*/
+    border: none;
+    padding: 2px;
+    margin: 10px;
+    transition: all 500ms;
+    background-color: #ffffff65;
+    color: #000;
+} 
+
+
+
+.title {
+    font-size: var(--font-large);   
+    font-family: var(--font-titles);
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: -10px;
+    color: #ffffff;padding: 0%;
+    transition: all 500ms;
+}
+
+header a h1:hover {
+    color: var(--text-color);
+}
+.offcanvas-body ul li a:hover {
+    color: var(--titles-decoration);
+}
+
+.barraDesplegable-Menu {
+    background-color: rgba(251, 244, 238, 0.5);
+    backdrop-filter: blur(4px);
+    color: var(--color-navBar);
+}
+
+.desplegable-options {
+    background-color: rgba(251, 244, 238, 0);
+    border: none;
+}
+
+.options {
+    color: var(--color-navBar);
+}
+
+
+/*--------------------------------------------------------------------*/
+.historia {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: var(--intermedio);
+}
+
+/* AGREGADO DE TRANSICION */
+.historia-Div div{
+    display: flex;
+    border: none;
+    align-items: center;
+    text-align: center;
+    background-color: var(--intermedio);
+    border-radius: 5px;
+}
+
+.historia-Div div p {
+    transition: all 500ms;
+}
+
+.historia-Div div p:hover {
+    color: var(--titles-decoration);
+}
+
+.iconosCard {
+    color: var(--color-navBar);
+}
+
+
+.textCard {
+    color: var(--color-navBar);
+    font-size: 18px;
+}
+
+.contenidos-TEX {
+    display: flex;
+    flex-direction: column;
+}
+
+.textosH3-card h3{
+    color: var(--color-navBar);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/*--------------------------------------------------------------------*/
+.logosRow {
+    background-color: var(--intermedio);
+    box-shadow:  0 0 5px #000;
+}
+
+.logosImage-Div {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.logosImage-Div img{
+    height: 50px;
+
+}
+
+/*--------------------------------------------------------------------*/
+.carouselRow-Tile {
+    text-align: center;
+    margin-top: 10px;
+}
+.carouselRow-Tile h2{
+    font-weight: var(--font-small);
+    font-size: 45px;
+    color: var(--titles-decoration);
+    margin: 0%;
+    padding: 0%;
+}
+.contenFila-Carousel {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textoCarousel-Left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textoCarousel-Left p {
+    width: 300px;
+    color: var(--titles-decoration);
+}
+.divImgCont-Carosuel {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+}
+.divImgCont-Carosuel div{
+    width: 100%
+}
+.carousel-indicators {
+    margin: 0%;
+}
+
+.titleCarousel a{
+    text-decoration: none;
+}
+
+.titleCarousel p{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 52%;
+    margin-right: 30%;
+    padding: 0%;
+    font-family: var(--font-titles);
+    font-weight: 900;
+    font-size: 70px;
+    color: var(--titles-decoration) ;
+}
+
+/*--------------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------------*/
+
+
+.abarcadoUno {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--titles-decoration);
+}
+.contenColumnas-Row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.primeraSeccion-Footer {
+    padding: 50px;
+}
+.segundaSeccion-Footer {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formIndex fieldset{
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.divPiepagina {
+    text-align: center;
+}
+.divPiepagina ::placeholder {
+    color: #000000;
+    font-family: var(--font-titles);
+}
+
+#piePaginaNewsletter {
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+#suscribir {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #eb5e28;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: var(--font-titles);
+    border-top: transparent;
+    border-color: #000000;
+    border-right: none;
+    border-left: none;
+}
+
+#piePaginaCorreo {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;
+    justify-content: left;
+}
+
+#titleRedes {
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.RedesPrincipal {
+    margin-top: 20px;
+    text-align: center;
+}
+.RedesPrincipal a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 5px;
+    font-weight: 100;
+    font-size: 10px;
+}
+
+.ultimoBorde {
+    background-color: #222222;
+    box-shadow: 0 0 40px #000000;
+}
+.ultimoBorde-Div {
+    margin: 20px;
+}
+
+#copyright {
+    margin: 10px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.iconosRedes {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 5px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.titlePages-Row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.titlePages {
+    color: var(--text-color);
+    font-family: var(--font-titles);
+
+}
+
+/*--------------------------------------------------------------------*/
+
+
+/*PORTAFOLIO*/
+
+
+.portafolioGral div {
+    display: flex;
+    justify-content: center;
+}
+.portafolioSection div {
+    width: 500px;
+    padding: 0%;
+    transition: all 500ms ease-out;
+}
+
+.portafolioSection div {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portafolioSection div .interaccionPortafolio {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 244, 238, 0.5);
+    backdrop-filter: blur(3px);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.portafolioSection  div:hover > .interaccionPortafolio {
+    opacity: 1;
+    visibility: visible;
+}
+.portafolioSection  div:hover > .interaccionPortafolio h3 {
+    margin-top: 70%;
+}
+
+.portafolioSection  div:hover > img {
+    transition: all 500ms ease-out;
+    transform: scale(1.2);
+}
+
+.portafolioSection div .interaccionPortafolio h3{
+    font-size: 60px;
+    font-family: var(--font-titles);
+    font-weight: 900;
+    letter-spacing: -5px;
+    transition: all 500ms ease-out;
+    color: var(--titles-decoration);
+    width: 100%;
+}
+
+.interaccionPortafolio a {
+    text-decoration: none;
+}
+
+.portafolioDiv-Img div{
+    width: 500px;
+    padding: 0%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.contenidoBiblio {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contBiblio-Section {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0%;
+    margin-bottom: 50px;
+}
+.imagenesBiblio {
+    width: 500px;
+}
+.parrafosDiv {
+    width: 500px;
+}
+#parrafoBibliografia {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+
+/*FOOTER*/
+.rowBiblio {
+    margin-top: 100px;
+    background-color: #222222;
+    box-shadow: 0 0 40px #000000;
+}
+.segundaSeccion-Footer {
+    padding: 30px;
+}
+.demasSecciones h4 {
+    color: var(--color-navBar);
+}
+.demasSecciones a {
+    color: var(--color-navBar);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#loremContacto {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+}
+
+.contenidoDeContacto{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fieldsetContacto {   
+    border: none;
+}
+.bloqueContactoFormulario {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formContacto {
+    background-color: var(--light-II);
+    font-size: 20px;
+    font-family: var(--font-titles);
+    font-weight: var(--font-large);
+    border-top: transparent;
+    border-left: none;
+    border-right: none;
+    width: 50%;
+}
+.bloqueContactoFormulario label{
+    font-size: 10px;
+    margin-top: 0;
+}
+
+.bloqueContactoFormulario h6{
+    font-size: 10px;
+    font-weight: 100;
+}
+
+#textareaContacto {
+    display: flex;
+    background-color: var(--light-II);
+    margin-bottom: 1px;
+    padding: 0%;
+    height: 100px;
+    width: 99%;
+    border-color: #CECECE;
+    border-radius: 8px;
+}
+.segundoContenidoContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pieContacto {
+    margin-top: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 50px 0px 50px 0px;
+}
+
+.buttonsContactoIconos{
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 50px;
+}
+
+#numeroTelefono {
+    color: #03071E;
+    font-weight: var(--font-small);
+}
+
+.botonEnviar {
+    margin-top: 20px;
+    color: #FBF4EE;
+    background-color: var(--color-botones);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 500ms;   
+    font-family: var(--font-titles);
+    font-weight: var(--font-large);
+}
+
+.botonEnviar:hover {
+    background-color: var(--titles-decoration);
+    color: #FBF4EE;
+    border-color:var(--titles-decoration);
+}
+
+ /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/
+/* INGRESAR */
+.seccionIngresar {
+    display: flex;
+    justify-content: center;
+}
+
+.divIngresar label {
+    font-size: 10px;
+    color: #000000;
+}
+
+.IngresarInput {
+    width: 100%;
+    background-color: var(--light-II);
+    color: #03071E;
+    font-size: 20px;
+    font-family: var(--font-titles);
+    font-weight: var(--font-large);
+    border-top: transparent;
+    border-color: #000000;
+    border-right: none;
+    border-left: none;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+
+ /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/
+
+ /*CREAR CUENTA*/
+
+ .formCrearCuenta form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.CrearCuentaInput {
+    width: 100%;
+    background-color: var(--light-II);
+    color: #03071E;
+    font-size: 20px;
+    font-family: var(--font-titles);
+    font-weight: var(--font-large);
+    border-top: transparent;
+    border-color: #000000;
+    border-right: none;
+    border-left: none;
+}
+
+.divCrearCuenta label {
+    font-size: 10px;
+    color: #000000;
+}
