@@ -141,20 +141,18 @@ header a h1:hover {
 }
 .logosImage-Div img{
     height: 50px;
-
 }
 
 /*--------------------------------------------------------------------*/
-.carouselRow-Tile {
+.carouselRow-Title {
     text-align: center;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
-.carouselRow-Tile h2{
+.carouselRow-Title h2{
     font-weight: var(--font-small);
     font-size: 45px;
     color: var(--titles-decoration);
-    margin: 0%;
-    padding: 0%;
 }
 .contenFila-Carousel {
     margin-top: 100px;
@@ -167,13 +165,13 @@ header a h1:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .textoCarousel-Left p {
-    width: 300px;
     color: var(--titles-decoration);
 }
+
+
 .divImgCont-Carosuel {
     width: 550px;
     display: flex;
