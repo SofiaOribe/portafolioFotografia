@@ -1,0 +1,49 @@
+
+header {
+    .botonMenu-Conten  {
+        border: none;
+        padding: 2px;
+        margin: 10px;
+        transition: all 500ms;
+        background-color: #ffffff65;
+        color: #000;
+    }
+    .title {
+        font-size: var(--font-large);   
+        font-family: var(--font-titles);
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: -10px;
+        color: #ffffff;
+        padding: 0%;
+        transition: all 500ms;
+        h1 {
+            
+            &:hover {
+                color: var(--text-color);
+            }
+        }
+    }
+    .offcanvas-body{
+        ul{
+            li{
+                a{
+                    color: var(--color-navBar); 
+                    &:hover {
+                        color: var(--titles-decoration);
+                    }
+                }
+            }
+        }
+    }
+    .barraDesplegable-Menu {
+        background-color: rgba(251, 244, 238, 0.5);
+        backdrop-filter: blur(4px);
+        color: var(--color-navBar);
+    }
+    .desplegable-options {
+        background-color: rgba(251, 244, 238, 0);
+        border: none;
+    }
+}
+
