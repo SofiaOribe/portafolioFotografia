@@ -237,6 +237,18 @@ header .desplegable-options {
   text-align: center;
 }
 
+.titlePages-Row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.titlePages-Row h5 {
+  color: var(--text-color);
+  font-family: var(--font-titles);
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -267,41 +279,19 @@ body {
   background-color: var(--light-II);
 }
 
-/*--------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
-.titlePages-Row {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 150px;
-  margin-bottom: 50px;
-}
-
-.titlePages {
-  color: var(--text-color);
-  font-family: var(--font-titles);
-}
-
-/*--------------------------------------------------------------------*/
 /*PORTAFOLIO*/
 .portafolioGral div {
   display: flex;
   justify-content: center;
 }
-
-.portafolioSection div {
+.portafolioGral div div {
   width: 500px;
   padding: 0%;
   transition: all 500ms ease-out;
-}
-
-.portafolioSection div {
   position: relative;
-  cursor: pointer;
   overflow: hidden;
 }
-
-.portafolioSection div .interaccionPortafolio {
+.portafolioGral div div .interaccionPortafolio {
   position: absolute;
   top: 0%;
   width: 100%;
@@ -313,6 +303,22 @@ body {
   opacity: 0;
   visibility: hidden;
   text-align: center;
+}
+.portafolioGral div div .interaccionPortafolio h3 {
+  font-size: 60px;
+  font-family: var(--font-titles);
+  font-weight: 900;
+  letter-spacing: -5px;
+  transition: all 500ms ease-out;
+  color: var(--titles-decoration);
+  width: 100%;
+}
+.portafolioGral div div .interaccionPortafolio a {
+  text-decoration: none;
+}
+.portafolioGral div .portafolioDiv-Img div {
+  width: 500px;
+  padding: 0%;
 }
 
 .portafolioSection div:hover > .interaccionPortafolio {
@@ -327,20 +333,6 @@ body {
 .portafolioSection div:hover > img {
   transition: all 500ms ease-out;
   transform: scale(1.2);
-}
-
-.portafolioSection div .interaccionPortafolio h3 {
-  font-size: 60px;
-  font-family: var(--font-titles);
-  font-weight: 900;
-  letter-spacing: -5px;
-  transition: all 500ms ease-out;
-  color: var(--titles-decoration);
-  width: 100%;
-}
-
-.interaccionPortafolio a {
-  text-decoration: none;
 }
 
 .portafolioDiv-Img div {

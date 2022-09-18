@@ -1,0 +1,11 @@
+.titlePages-Row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    h5 {
+        color: var(--text-color);
+        font-family: var(--font-titles);
+    }
+}
