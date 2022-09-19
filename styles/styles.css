@@ -2,19 +2,19 @@
   width: 100%;
   margin-top: 20px;
   color: #FBF4EE;
-  background-color: var(--color-botones);
+  background-color: #222222;
   border-radius: 5px;
   font-size: 15px;
   padding: 10px;
   cursor: pointer;
   transition: all 500ms;
-  font-family: var(--font-titles);
-  font-weight: var(--font-large);
+  font-family: "Bodoni Moda", serif;
+  font-weight: 900;
 }
 .botonEnviar:hover {
-  background-color: var(--titles-decoration);
+  background-color: #eb5e28;
   color: #FBF4EE;
-  border-color: var(--titles-decoration);
+  border-color: #eb5e28;
 }
 
 .boton {
@@ -27,14 +27,14 @@ header .botonMenu-Conten {
   padding: 2px;
   margin: 10px;
   transition: all 500ms;
-  background-color: rgba(255, 255, 255, 0.3960784314);
+  background-color: rgba(251, 244, 238, 0.5);
   color: #000;
 }
 header .title {
   font-size: 900;
   font-family: "Bodoni Moda", serif;
   font-size: 70px;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: -10px;
   color: #ffffff;
   padding: 0%;
@@ -65,40 +65,40 @@ header .desplegable-options {
   display: flex;
   justify-content: space-around;
   padding: 50px;
-  background-color: var(--intermedio);
+  background-color: #acc0d4;
 }
 .historia .historia-Div div {
   display: flex;
   border: none;
   align-items: center;
   text-align: center;
-  background-color: var(--intermedio);
+  background-color: #acc0d4;
   border-radius: 5px;
 }
 .historia .historia-Div div svg {
-  color: var(--color-navBar);
+  color: #ffffff;
 }
 .historia .historia-Div div .contenidos-TEX {
   display: flex;
   flex-direction: column;
 }
 .historia .historia-Div div .contenidos-TEX section h3 {
-  color: var(--color-navBar);
+  color: #ffffff;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .historia .historia-Div div .contenidos-TEX section p {
-  color: var(--color-navBar);
+  color: #ffffff;
   font-size: 18px;
   transition: all 500ms;
 }
 .historia .historia-Div div .contenidos-TEX section p:hover {
-  color: var(--titles-decoration);
+  color: #eb5e28;
 }
 
 /*--------------------------------------------------------------------*/
 .logosRow {
-  background-color: var(--intermedio);
+  background-color: #acc0d4;
   box-shadow: 0 0 5px #000;
 }
 .logosRow .logosImage-Div {
@@ -126,14 +126,14 @@ header .desplegable-options {
 }
 .contenFila-Carousel .textoCarousel-Left div h2 {
   text-align: center;
-  font-weight: var(--font-small);
+  font-weight: 100;
   font-size: 45px;
-  color: var(--titles-decoration);
+  color: #eb5e28;
   margin: 0%;
   padding: 0%;
 }
 .contenFila-Carousel .textoCarousel-Left div p {
-  color: var(--titles-decoration);
+  color: #eb5e28;
 }
 .contenFila-Carousel .divImgCont-Carosuel {
   width: 550px;
@@ -157,17 +157,17 @@ header .desplegable-options {
   margin-bottom: 52%;
   margin-right: 30%;
   padding: 0%;
-  font-family: var(--font-titles);
+  font-family: "Bodoni Moda", serif;
   font-weight: 900;
   font-size: 70px;
-  color: var(--titles-decoration);
+  color: #eb5e28;
 }
 
 /*--------------------------------------------------------------------*/
 .abarcadoUno {
   display: flex;
   justify-content: space-around;
-  background-color: var(--titles-decoration);
+  background-color: #eb5e28;
 }
 .abarcadoUno .contenColumnas-Row {
   margin-top: 100px;
@@ -177,7 +177,7 @@ header .desplegable-options {
   padding: 50px;
 }
 .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset {
-  color: #000000;
+  color: #000;
   display: flex;
   justify-content: center;
   border: none;
@@ -186,16 +186,16 @@ header .desplegable-options {
   text-align: center;
 }
 .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div ::-moz-placeholder {
-  color: #000000;
-  font-family: var(--font-titles);
+  color: #000;
+  font-family: "Bodoni Moda", serif;
 }
 .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div :-ms-input-placeholder {
-  color: #000000;
-  font-family: var(--font-titles);
+  color: #000;
+  font-family: "Bodoni Moda", serif;
 }
 .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div ::placeholder {
-  color: #000000;
-  font-family: var(--font-titles);
+  color: #000;
+  font-family: "Bodoni Moda", serif;
 }
 .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div h5 {
   letter-spacing: 1.5px;
@@ -208,14 +208,14 @@ header .desplegable-options {
   background-color: #eb5e28;
   font-size: 35px;
   font-weight: 900;
-  font-family: var(--font-titles);
+  font-family: "Bodoni Moda", serif;
   border-top: transparent;
-  border-color: #000000;
+  border-color: #000;
   border-right: none;
   border-left: none;
 }
 .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div label {
-  color: #000000;
+  color: #000;
   font-size: 14px;
   font-weight: 100;
   display: flex;
@@ -240,7 +240,7 @@ header .desplegable-options {
 }
 .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer section div a {
   text-decoration: none;
-  color: var(--text-color);
+  color: #000;
   padding: 5px;
   font-weight: 100;
   font-size: 10px;
@@ -254,8 +254,8 @@ header .desplegable-options {
   margin-bottom: 50px;
 }
 .titlePages-Row h5 {
-  color: var(--text-color);
-  font-family: var(--font-titles);
+  color: #000;
+  font-family: "Bodoni Moda", serif;
 }
 
 .portafolioGral div {
@@ -284,11 +284,11 @@ header .desplegable-options {
 }
 .portafolioGral div div .interaccionPortafolio h3 {
   font-size: 60px;
-  font-family: var(--font-titles);
+  font-family: "Bodoni Moda", serif;
   font-weight: 900;
   letter-spacing: -5px;
   transition: all 500ms ease-out;
-  color: var(--titles-decoration);
+  color: #eb5e28;
   width: 100%;
 }
 .portafolioGral div div .interaccionPortafolio a {
@@ -345,19 +345,19 @@ header .desplegable-options {
 }
 .formCrearCuenta form fieldset div input {
   width: 100%;
-  background-color: var(--light-II);
-  color: #03071E;
+  background-color: #EBE9EA;
+  color: #000;
   font-size: 20px;
-  font-family: var(--font-titles);
-  font-weight: var(--font-large);
+  font-family: "Bodoni Moda", serif;
+  font-weight: 900;
   border-top: transparent;
-  border-color: #000000;
+  border-color: #000;
   border-right: none;
   border-left: none;
 }
 .formCrearCuenta form fieldset div label {
   font-size: 10px;
-  color: #000000;
+  color: #000;
 }
 
 .seccionesRow .segundoContenidoContacto {
@@ -381,8 +381,8 @@ header .desplegable-options {
   padding: 50px 0px 50px 0px;
 }
 .seccionesRow .segundoContenidoContacto div h6 {
-  color: #03071E;
-  font-weight: var(--font-small);
+  color: #000;
+  font-weight: 100;
 }
 .seccionesRow .primerContenidoContacto fieldset div {
   display: flex;
@@ -390,10 +390,10 @@ header .desplegable-options {
   text-align: left;
 }
 .seccionesRow .primerContenidoContacto fieldset div input {
-  background-color: var(--light-II);
+  background-color: #EBE9EA;
   font-size: 20px;
-  font-family: var(--font-titles);
-  font-weight: var(--font-large);
+  font-family: "Bodoni Moda", serif;
+  font-weight: 900;
   border-top: transparent;
   border-left: none;
   border-right: none;
@@ -409,7 +409,7 @@ header .desplegable-options {
 }
 .seccionesRow .primerContenidoContacto fieldset div textarea {
   display: flex;
-  background-color: var(--light-II);
+  background-color: #EBE9EA;
   margin-bottom: 1px;
   padding: 0%;
   height: 100px;
@@ -424,17 +424,17 @@ header .desplegable-options {
 }
 .seccionIngresar fieldset div label {
   font-size: 10px;
-  color: #000000;
+  color: #000;
 }
 .seccionIngresar fieldset div input {
   width: 100%;
-  background-color: var(--light-II);
-  color: #03071E;
+  background-color: #EBE9EA;
+  color: #000;
   font-size: 20px;
-  font-family: var(--font-titles);
-  font-weight: var(--font-large);
+  font-family: "Bodoni Moda", serif;
+  font-weight: 900;
   border-top: transparent;
-  border-color: #000000;
+  border-color: #000;
   border-right: none;
   border-left: none;
 }
@@ -454,15 +454,15 @@ header .desplegable-options {
   text-align: center;
 }
 .rowBiblio div section h4 {
-  color: var(--color-navBar);
-  font-weight: var(--font-small);
+  color: #ffffff;
+  font-weight: 100;
   font-size: 20px;
   margin: 0%;
 }
 .rowBiblio div section div a {
   text-decoration: none;
-  color: var(--color-navBar);
-  font-weight: var(--font-small);
+  color: #ffffff;
+  font-weight: 100;
   font-size: 10px;
   padding-left: 5px;
   padding-right: 5px;

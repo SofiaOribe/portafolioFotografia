@@ -4,14 +4,14 @@ header {
         padding: 2px;
         margin: 10px;
         transition: all 500ms;
-        background-color: #ffffff65;
+        background-color: $menuDesplegable;
         color: $textColor;
     }
     .title {
         font-size: $fontlarge;   
         font-family: $fontTitles;
         font-size: 70px;
-        font-weight: bold;
+        font-weight: $fontlarge;
         letter-spacing: -10px;
         color: $colorNavBar;
         padding: 0%;

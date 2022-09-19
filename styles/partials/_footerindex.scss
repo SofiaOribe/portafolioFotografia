@@ -1,45 +1,45 @@
 .abarcadoUno {
     display: flex;
     justify-content: space-around;
-    background-color: var(--titles-decoration);
+    background-color: $titlesDecoration;
     .contenColumnas-Row {
         margin-top: 100px;
         margin-bottom: 100px;
         .primeraSeccion-Footer {
             padding: 50px;
             fieldset {
-                color: #000000;
+                color: $textColor;
                 display: flex;
                 justify-content: center;
                 border: none;
                 div {
                     text-align: center;
                     ::placeholder {
-                        color: #000000;
-                        font-family: var(--font-titles);
+                        color: $textColor;
+                        font-family: $fontTitles;
                     }
                     h5 {
                         letter-spacing: 1.5px;
-                        font-weight: 100;
+                        font-weight:$fontsmall;
                         font-size: 20px;
                     }
                     input {
                         width: 100%;
                         margin-top: 20px;
-                        background-color: #eb5e28;
+                        background-color: $titlesDecoration;
                         font-size: 35px;
-                        font-weight: 900;
-                        font-family: var(--font-titles);
+                        font-weight:$fontlarge;
+                        font-family: $fontTitles;
                         border-top: transparent;
-                        border-color: #000000;
+                        border-color: $textColor;
                         border-right: none;
                         border-left: none;
                 
                     }
                     label {
-                        color: #000000;
+                        color: $textColor;
                         font-size: 14px;
-                        font-weight: 100;
+                        font-weight: $fontsmall;
                         display: flex;
                         justify-content: left;
                     }
@@ -53,7 +53,7 @@
             align-items: center;
             section{
                 h4 {
-                    color: #000 ;
+                    color: $textColor;
                     display: flex;
                     justify-content: center;
                     font-weight: 100;
@@ -64,9 +64,9 @@
                     text-align: center;
                     a {
                         text-decoration: none;
-                        color: var(--text-color);
+                        color: $textColor;
                         padding: 5px;
-                        font-weight: 100;
+                        font-weight: $fontsmall;
                         font-size: 10px;
                     }
                 }

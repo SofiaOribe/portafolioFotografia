@@ -5,17 +5,17 @@
         div {
             label {
                 font-size: 10px;
-                color: #000000;
+                color:$textColor;
             }
             input {
                 width: 100%;
-                background-color: var(--light-II);
-                color: #03071E;
+                background-color: $lightII;
+                color: $textColor;
                 font-size: 20px;
-                font-family: var(--font-titles);
-                font-weight: var(--font-large);
+                font-family: $fontTitles;
+                font-weight: $fontlarge;
                 border-top: transparent;
-                border-color: #000000;
+                border-color: $textColor;
                 border-right: none;
                 border-left: none;
             }

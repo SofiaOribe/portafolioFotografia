@@ -2,18 +2,18 @@
     width: 100%;
     margin-top: 20px;
     color: #FBF4EE;
-    background-color: var(--color-botones);
+    background-color: $colorBotones;
     border-radius: 5px;
     font-size: 15px;
     padding: 10px;
     cursor: pointer;
     transition: all 500ms;   
-    font-family: var(--font-titles);
-    font-weight: var(--font-large);
+    font-family: $fontTitles;
+    font-weight: $fontlarge;
     &:hover {
-        background-color: var(--titles-decoration);
+        background-color: $titlesDecoration;
         color: #FBF4EE;
-        border-color:var(--titles-decoration);
+        border-color:$titlesDecoration;
     }
 }
 
