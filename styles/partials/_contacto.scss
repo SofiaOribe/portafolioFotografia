@@ -1,0 +1,64 @@
+.seccionesRow {
+    .segundoContenidoContacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            text-align: center;
+        }
+        div {
+            margin-top: 40px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            padding: 50px 0px 50px 0px;
+            h6 {
+                color: #03071E;
+                font-weight: var(--font-small);
+            }
+        }
+    }
+    .primerContenidoContacto {
+        fieldset {
+            div {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                input {
+                    background-color: var(--light-II);
+                    font-size: 20px;
+                    font-family: var(--font-titles);
+                    font-weight: var(--font-large);
+                    border-top: transparent;
+                    border-left: none;
+                    border-right: none;
+                    width: 50%;
+                }
+                label{
+                    font-size: 10px;
+                    margin-top: 0;
+                }
+                h6{
+                    font-size: 10px;
+                    font-weight: 100;
+                }
+                textarea {
+                    display: flex;
+                    background-color: var(--light-II);
+                    margin-bottom: 1px;
+                    padding: 0%;
+                    height: 100px;
+                    width: 99%;
+                    border-color: #CECECE;
+                    border-radius: 8px;
+                }
+            }
+            
+        }
+    }
+}
