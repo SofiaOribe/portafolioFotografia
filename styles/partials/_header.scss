@@ -1,4 +1,3 @@
-
 header {
     .botonMenu-Conten  {
         border: none;
@@ -6,43 +5,40 @@ header {
         margin: 10px;
         transition: all 500ms;
         background-color: #ffffff65;
-        color: #000;
+        color: $textColor;
     }
     .title {
-        font-size: var(--font-large);   
-        font-family: var(--font-titles);
+        font-size: $fontlarge;   
+        font-family: $fontTitles;
         font-size: 70px;
         font-weight: bold;
         letter-spacing: -10px;
-        color: #ffffff;
+        color: $colorNavBar;
         padding: 0%;
         transition: all 500ms;
-        h1 {
-            
             &:hover {
-                color: var(--text-color);
+                color: $textColor;
             }
-        }
     }
     .offcanvas-body{
         ul{
             li{
                 a{
-                    color: var(--color-navBar); 
+                    color: $colorNavBar; 
                     &:hover {
-                        color: var(--titles-decoration);
+                        color: $titlesDecoration;
                     }
                 }
             }
         }
     }
     .barraDesplegable-Menu {
-        background-color: rgba(251, 244, 238, 0.5);
+        background-color: $menuDesplegable;
         backdrop-filter: blur(4px);
-        color: var(--color-navBar);
+        color: $colorNavBar;
     }
     .desplegable-options {
-        background-color: rgba(251, 244, 238, 0);
+        background-color: $fondoPortafolioMenu;
         border: none;
     }
 }

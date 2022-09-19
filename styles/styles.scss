@@ -21,28 +21,7 @@
     transition: 0.1ms;
 } 
 
-:root {
-    /* COLOR */
-    --darkI: #98979F;
-    --darkII: #A29FA8 ;
-    --intermedio: #acc0d4 ;
-    --light-I: #D6DBE1;
-    --light-II: #EBE9EA;
-    --text-color: #000 ;
-    --titles-decoration: #eb5e28;
-    --color-navBar: #ffffff;
-    --color-botones: #222222 ;
-
-    /* FONT-SIZES */
-    --font-small: 100;
-    --font-medium: 500;
-    --font-large: 900;
-
-    /* FONT-FAMILY */
-    --font-titles: 'Bodoni Moda', serif;
-}
-
 body {
  overflow: auto;
- background-color: var(--light-II);
+ background-color: $lightII;
 }
