@@ -1,3 +1,27 @@
+.botonEnviar {
+  width: 100%;
+  margin-top: 20px;
+  color: #FBF4EE;
+  background-color: var(--color-botones);
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 500ms;
+  font-family: var(--font-titles);
+  font-weight: var(--font-large);
+}
+.botonEnviar:hover {
+  background-color: var(--titles-decoration);
+  color: #FBF4EE;
+  border-color: var(--titles-decoration);
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+}
+
 header .botonMenu-Conten {
   border: none;
   padding: 2px;
@@ -222,21 +246,6 @@ header .desplegable-options {
   font-size: 10px;
 }
 
-.ultimoBorde {
-  background-color: #222222;
-  box-shadow: 0 0 40px #000000;
-}
-.ultimoBorde div {
-  margin: 20px;
-}
-.ultimoBorde div h6 {
-  margin: 10px;
-  color: #ffffff;
-  font-size: 10px;
-  font-weight: 100;
-  text-align: center;
-}
-
 .titlePages-Row {
   display: flex;
   justify-content: center;
@@ -409,6 +418,27 @@ header .desplegable-options {
   border-radius: 8px;
 }
 
+.seccionIngresar {
+  display: flex;
+  justify-content: center;
+}
+.seccionIngresar fieldset div label {
+  font-size: 10px;
+  color: #000000;
+}
+.seccionIngresar fieldset div input {
+  width: 100%;
+  background-color: var(--light-II);
+  color: #03071E;
+  font-size: 20px;
+  font-family: var(--font-titles);
+  font-weight: var(--font-large);
+  border-top: transparent;
+  border-color: #000000;
+  border-right: none;
+  border-left: none;
+}
+
 .rowBiblio {
   margin-top: 100px;
   background-color: #222222;
@@ -438,49 +468,19 @@ header .desplegable-options {
   padding-right: 5px;
 }
 
-.botonEnviar {
-  width: 100%;
-  margin-top: 20px;
-  color: #FBF4EE;
-  background-color: var(--color-botones);
-  border-radius: 5px;
-  font-size: 15px;
-  padding: 10px;
-  cursor: pointer;
-  transition: all 500ms;
-  font-family: var(--font-titles);
-  font-weight: var(--font-large);
+.ultimoBorde {
+  background-color: #222222;
+  box-shadow: 0 0 40px #000000;
 }
-.botonEnviar:hover {
-  background-color: var(--titles-decoration);
-  color: #FBF4EE;
-  border-color: var(--titles-decoration);
+.ultimoBorde div {
+  margin: 20px;
 }
-
-.boton {
-  display: flex;
-  justify-content: center;
-}
-
-.seccionIngresar {
-  display: flex;
-  justify-content: center;
-}
-.seccionIngresar fieldset div label {
+.ultimoBorde div h6 {
+  margin: 10px;
+  color: #ffffff;
   font-size: 10px;
-  color: #000000;
-}
-.seccionIngresar fieldset div input {
-  width: 100%;
-  background-color: var(--light-II);
-  color: #03071E;
-  font-size: 20px;
-  font-family: var(--font-titles);
-  font-weight: var(--font-large);
-  border-top: transparent;
-  border-color: #000000;
-  border-right: none;
-  border-left: none;
+  font-weight: 100;
+  text-align: center;
 }
 
 * {
