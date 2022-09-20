@@ -3,8 +3,7 @@
     background-color: map-get($colores, colorBotones);
     box-shadow: 0 0 40px #000000;
     div {
-        display: flex;
-        justify-content: center;
+        @extend %flexDisCenter;
         padding-top: 15px;
         padding-bottom: 10px;
         section {

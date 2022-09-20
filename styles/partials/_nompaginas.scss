@@ -1,6 +1,5 @@
 .titlePages-Row {
-    display: flex;
-    justify-content: center;
+    @extend %flexDisCenter;
     text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;

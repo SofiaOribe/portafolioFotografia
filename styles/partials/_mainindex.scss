@@ -46,8 +46,7 @@
     background-color: map-get($colores, intermedio);
     box-shadow:  0 0 5px #000;
     .logosImage-Div {
-        display: flex;
-        justify-content: center;
+        @extend %flexDisCenter;
         padding-top: 20px;
         padding-bottom: 20px;
         img{
@@ -81,8 +80,7 @@
     }
     .divImgCont-Carosuel {
         width: 550px;
-        display: flex;
-        justify-content: center;
+        @extend %flexDisCenter;
         div{
             width: 100%;
             .carousel-indicators {
@@ -92,8 +90,7 @@
                 text-decoration: none;
                 p{
                     text-decoration: none;
-                    display: flex;
-                    justify-content: center;
+                    @extend %flexDisCenter;
                     margin-right: 30%;
                     margin-bottom: 50%;
                     padding: 0%;
@@ -106,5 +103,3 @@
         }
     }
 }
-
-/*--------------------------------------------------------------------*/

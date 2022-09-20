@@ -1,6 +1,5 @@
 .portafolioGral div {
-    display: flex;
-    justify-content: center;
+    @extend %flexDisCenter;
     div {
         .interaccionPortafolio {
             position: absolute;

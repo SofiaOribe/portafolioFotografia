@@ -1,6 +1,5 @@
 .seccionIngresar {
-    display: flex;
-    justify-content: center;
+    @extend %flexDisCenter;
     fieldset {
         div {
             label {
