@@ -3,17 +3,17 @@
     display: flex;
     justify-content: space-around;
     padding: 50px;
-    background-color: $intermedio;
+    background-color: map-get($colores, intermedio);
     .historia-Div {
         div {
             display: flex;
             border: none;
             align-items: center;
             text-align: center;
-            background-color: $intermedio;
+            background-color: map-get($colores, intermedio);
             border-radius: 5px;
             svg {
-                color: $colorNavBar;
+                color: map-get($colores, colorNavBar);
             }
             .contenidos-TEX {
                 display: flex;
@@ -21,16 +21,16 @@
 
                 section {
                     h3 {
-                        color: $colorNavBar;
+                        color: map-get($colores, colorNavBar)r;
                         font-size: 25px;
-                        font-weight: $fontmedium;
+                        font-weight: map-get($tamanos, fontmedium);
                     }
                     p {
-                        color: $colorNavBar;
+                        color: map-get($colores, colorNavBar);
                         font-size: 18px;
                         transition: all 500ms;
                         &:hover {
-                            color: $titlesDecoration;
+                            color: map-get($colores, titlesDecoration);
                         }
                     }
                 }
@@ -43,7 +43,7 @@
 /*--------------------------------------------------------------------*/
 
 .logosRow {
-    background-color: $intermedio;
+    background-color: map-get($colores, intermedio);
     box-shadow:  0 0 5px #000;
     .logosImage-Div {
         display: flex;
@@ -68,14 +68,14 @@
         div {
             margin-top: 15%;
             h2 {
-                font-weight: $fontsmall;
+                font-weight:map-get($tamanos, fontsmall);
                 font-size: 45px;
-                color: $titlesDecoration;
+                color: map-get($colores, titlesDecoration);
                 margin: 0%;
                 padding: 0%;
             }
             p {
-                color: $titlesDecoration;
+                color: map-get($colores, titlesDecoration);
             }
         }
     }
@@ -97,10 +97,10 @@
                     margin-right: 30%;
                     margin-bottom: 50%;
                     padding: 0%;
-                    font-family: $fontTitles;
+                    font-family: map-get($fontfamily, fontTitles);
                     font-weight: 900;
                     font-size: 60px;
-                    color: $titlesDecoration;
+                    color: map-get($colores, titlesDecoration);
                 }
             }
         }

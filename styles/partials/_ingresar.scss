@@ -9,13 +9,13 @@
             }
             input {
                 width: 100%;
-                background-color: $lightII;
-                color: $textColor;
+                background-color: map-get($colores, lightII);
+                color: map-get($colores, textColor);
                 font-size: 20px;
-                font-family: $fontTitles;
-                font-weight: $fontlarge;
+                font-family: map-get($fontfamily, fontTitles);
+                font-weight: map-get($tamanos, fontlarge);
                 border-top: transparent;
-                border-color: $textColor;
+                border-color: map-get($colores, textColor);
                 border-right: none;
                 border-left: none;
             }

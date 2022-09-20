@@ -2,18 +2,18 @@
     width: 100%;
     margin-top: 20px;
     color: #FBF4EE;
-    background-color: $colorBotones;
+    background-color: map-get($colores, colorBotones);
     border-radius: 5px;
     font-size: 15px;
     padding: 10px;
     cursor: pointer;
     transition: all 500ms;   
-    font-family: $fontTitles;
-    font-weight: $fontlarge;
+    font-family: map-get($fontfamily, fontTitles);
+    font-weight: map-get($tamanos, fontlarge);
     &:hover {
-        background-color: $titlesDecoration;
+        background-color: map-get($colores, titlesDecoration);
         color: #FBF4EE;
-        border-color:$titlesDecoration;
+        border-color: map-get($colores, titlesDecoration);
     }
 }
 

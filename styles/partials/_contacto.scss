@@ -18,8 +18,8 @@
             font-size: 20px;
             padding: 50px 0px 50px 0px;
             h6 {
-                color: $textColor;
-                font-weight: $fontsmall;
+                color: map-get($colores, textColor);
+                font-weight: map-get($tamanos, fontsmall);
             }
         }
     }
@@ -30,10 +30,10 @@
                 flex-direction: column;
                 text-align: left;
                 input {
-                    background-color: $lightII;
+                    background-color: map-get($colores, lightII);
                     font-size: 20px;
-                    font-family: $fontTitles;
-                    font-weight: $fontlarge;
+                    font-family: map-get($fontfamily, fontTitles);
+                    font-weight: map-get($tamanos, fontlarge);
                     border-top: transparent;
                     border-left: none;
                     border-right: none;
@@ -49,7 +49,7 @@
                 }
                 textarea {
                     display: flex;
-                    background-color: $lightII;
+                    background-color: map-get($colores, lightII);
                     margin-bottom: 1px;
                     padding: 0%;
                     height: 100px;

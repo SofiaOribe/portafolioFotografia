@@ -4,41 +4,41 @@ header {
         padding: 2px;
         margin: 10px;
         transition: all 500ms;
-        background-color: $menuDesplegable;
-        color: $textColor;
+        background-color: map-get($colores, menuDesplegable);
+        color: map-get($colores, textColor);
     }
     .title {
-        font-size: $fontlarge;   
-        font-family: $fontTitles;
+        font-size: map-get($tamanos, fontlarge);   
+        font-family: map-get($fontfamily, fontTitles);
         font-size: 70px;
-        font-weight: $fontlarge;
+        font-weight: map-get($tamanos, fontlarge);
         letter-spacing: -10px;
-        color: $colorNavBar;
+        color: map-get($colores, colorNavBar);
         padding: 0%;
         transition: all 500ms;
             &:hover {
-                color: $textColor;
+                color: map-get($colores, textColor);
             }
     }
     .offcanvas-body{
         ul{
             li{
                 a{
-                    color: $colorNavBar; 
+                    color: map-get($colores, colorNavBar); 
                     &:hover {
-                        color: $titlesDecoration;
+                        color: map-get($colores, titlesDecoration);
                     }
                 }
             }
         }
     }
     .barraDesplegable-Menu {
-        background-color: $menuDesplegable;
+        background-color: map-get($colores, menuDesplegable);
         backdrop-filter: blur(4px);
-        color: $colorNavBar;
+        color: map-get($colores, colorNavBar);
     }
     .desplegable-options {
-        background-color: $fondoPortafolioMenu;
+        background-color: map-get($colores, fondoPortafolioMenu);
         border: none;
     }
 }

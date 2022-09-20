@@ -5,7 +5,7 @@
     margin-top: 150px;
     margin-bottom: 50px;
     h5 {
-        color: $textColor;
-        font-family: $fontTitles;
+        color: map-get($colores, textColor);
+        font-family: map-get($fontfamily, fontTitles);
     }
 }

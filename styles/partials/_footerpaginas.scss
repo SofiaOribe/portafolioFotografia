@@ -1,6 +1,6 @@
 .rowBiblio {
     margin-top: 100px;
-    background-color: $colorBotones;
+    background-color: map-get($colores, colorBotones);
     box-shadow: 0 0 40px #000000;
     div {
         display: flex;
@@ -10,16 +10,16 @@
         section {
             text-align: center;
             h4 {
-                color: $colorNavBar;
-                font-weight: $fontsmall;
+                color: map-get($colores, colorNavBar);
+                font-weight: map-get($tamanos, fontsmall);
                 font-size: 20px;
                 margin: 0%;
             }
             div {
                 a {
                     text-decoration: none;
-                    color: $colorNavBar;
-                    font-weight: $fontsmall;
+                    color: map-get($colores, colorNavBar);
+                    font-weight: map-get($tamanos, fontsmall);
                     font-size: 10px;
                     padding-left: 5px;
                     padding-right: 5px;
