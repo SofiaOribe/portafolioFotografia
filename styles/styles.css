@@ -120,12 +120,11 @@ header .desplegable-options {
 }
 .contenFila-Carousel .textoCarousel-Left {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.contenFila-Carousel .textoCarousel-Left div {
+  margin-top: 15%;
 }
 .contenFila-Carousel .textoCarousel-Left div h2 {
-  text-align: center;
   font-weight: 100;
   font-size: 45px;
   color: #eb5e28;
@@ -154,11 +153,11 @@ header .desplegable-options {
   display: flex;
   justify-content: center;
   margin-right: 30%;
-  margin-bottom: 48%;
+  margin-bottom: 50%;
   padding: 0%;
   font-family: "Bodoni Moda", serif;
   font-weight: 900;
-  font-size: 70px;
+  font-size: 60px;
   color: #eb5e28;
 }
 
