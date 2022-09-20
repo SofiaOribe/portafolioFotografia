@@ -153,9 +153,8 @@ header .desplegable-options {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 52%;
   margin-right: 30%;
+  margin-bottom: 48%;
   padding: 0%;
   font-family: "Bodoni Moda", serif;
   font-weight: 900;
@@ -294,23 +293,20 @@ header .desplegable-options {
 .portafolioGral div div .interaccionPortafolio a {
   text-decoration: none;
 }
-.portafolioGral div .portafolioDiv-Img div {
-  width: 500px;
-  padding: 0%;
+.portafolioGral div div:hover img {
+  transition: all 500ms ease-out;
+  transform: scale(1.2);
 }
-
-.portafolioSection div:hover > .interaccionPortafolio {
+.portafolioGral div div:hover h3 {
+  margin-top: 60%;
+}
+.portafolioGral div div:hover .interaccionPortafolio {
   opacity: 1;
   visibility: visible;
 }
-
-.portafolioSection div:hover > .interaccionPortafolio h3 {
-  margin-top: 70%;
-}
-
-.portafolioSection div:hover > img {
-  transition: all 500ms ease-out;
-  transform: scale(1.2);
+.portafolioGral div .portafolioDiv-Img div {
+  width: 500px;
+  padding: 0%;
 }
 
 .contenidoBiblio {

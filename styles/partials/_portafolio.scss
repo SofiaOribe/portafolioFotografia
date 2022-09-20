@@ -2,11 +2,6 @@
     display: flex;
     justify-content: center;
     div {
-        width: 500px;
-        padding: 0%;
-        transition: all 500ms ease-out;
-        position: relative;
-        overflow: hidden;
         .interaccionPortafolio {
             position: absolute;
             top: 0%;
@@ -31,21 +26,28 @@
                 text-decoration: none;
             }
         }
+        width: 500px;
+        padding: 0%;
+        transition: all 500ms ease-out;
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            img {
+                transition: all 500ms ease-out;
+                transform: scale(1.2);
+            }
+            h3 {
+                margin-top: 60%;
+            }
+            .interaccionPortafolio {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
     }
     .portafolioDiv-Img div{
         width: 500px;
         padding: 0%;
     }
 }
-.portafolioSection  div:hover > .interaccionPortafolio {
-    opacity: 1;
-    visibility: visible;
-}
-.portafolioSection  div:hover > .interaccionPortafolio h3 {
-    margin-top: 70%;
-}
 
-.portafolioSection  div:hover > img {
-    transition: all 500ms ease-out;
-    transform: scale(1.2);
-}
