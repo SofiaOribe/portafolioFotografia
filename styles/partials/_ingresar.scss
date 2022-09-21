@@ -4,7 +4,7 @@
         div {
             label {
                 font-size: 10px;
-                color:$textColor;
+                color: map-get($colores, textColor);
             }
             input {
                 width: 100%;

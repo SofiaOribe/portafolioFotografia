@@ -1,6 +1,6 @@
+@import "./partials/maps";
 @import "./partials/extends";
 @import "./partials/mixins";
-@import "./partials/maps";
 @import "./partials/botones";
 @import "./partials/header";
 @import "./partials/mainindex";
@@ -18,7 +18,6 @@
 
 
 * {
-    
     margin: 0%;
     padding: 0%;
     transition: 0.1ms;
