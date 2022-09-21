@@ -25,5 +25,5 @@
 
 body {
  overflow: auto;
- background-color: $lightII;
+ background-color: map-get($colores, lightII);
 }
