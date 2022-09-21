@@ -330,6 +330,13 @@ header .desplegable-options {
   font-size: 10px;
   color: #000;
 }
+.formCrearCuenta form fieldset div section {
+  display: flex;
+  justify-content: space-between;
+}
+.formCrearCuenta form fieldset div section .checkboxCrearC {
+  width: 20px;
+}
 
 .seccionesRow .segundoContenidoContacto {
   display: flex;
