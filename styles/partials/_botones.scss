@@ -1,6 +1,8 @@
 .botonEnviar {
     width: 100%;
-    @include boton($color:#FBF4EE, $margintop:20px);
+
+    @include boton($color:#FBF4EE, $margintop: 20px);
+    
     background-color: map-get($colores, colorBotones);
     border-radius: 5px;
     font-size: 15px;

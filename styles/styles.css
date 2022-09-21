@@ -73,6 +73,7 @@ header .desplegable-options {
   align-items: center;
   text-align: center;
   background-color: #acc0d4;
+  color: #ffffff;
   border-radius: 5px;
 }
 .historia .historia-Div div svg {
@@ -83,12 +84,10 @@ header .desplegable-options {
   flex-direction: column;
 }
 .historia .historia-Div div .contenidos-TEX section h3 {
-  color: #ffffff r;
   font-size: 25px;
   font-weight: 500;
 }
 .historia .historia-Div div .contenidos-TEX section p {
-  color: #ffffff;
   font-size: 18px;
   transition: all 500ms;
 }

@@ -11,6 +11,7 @@
             align-items: center;
             text-align: center;
             background-color: map-get($colores, intermedio);
+            color: map-get($colores, colorNavBar);
             border-radius: 5px;
             svg {
                 color: map-get($colores, colorNavBar);
@@ -21,12 +22,10 @@
 
                 section {
                     h3 {
-                        color: map-get($colores, colorNavBar)r;
                         font-size: 25px;
                         font-weight: map-get($tamanos, fontmedium);
                     }
                     p {
-                        color: map-get($colores, colorNavBar);
                         font-size: 18px;
                         transition: all 500ms;
                         &:hover {
