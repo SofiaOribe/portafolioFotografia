@@ -1,3 +1,14 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  transition: 0.1ms;
+}
+
+body {
+  overflow: auto;
+  background-color: #EBE9EA;
+}/*# sourceMappingURL=styles.css.map */
+
 .botonEnviar {
   width: 100%;
   margin-top: 20px;
@@ -15,11 +26,6 @@
   background-color: #eb5e28;
   color: #FBF4EE;
   border-color: #eb5e28;
-}
-
-.boton {
-  display: flex;
-  justify-content: center;
 }
 
 header .botonMenu-Conten {
@@ -478,13 +484,3 @@ header .desplegable-options {
   text-align: center;
 }
 
-* {
-  margin: 0%;
-  padding: 0%;
-  transition: 0.1ms;
-}
-
-body {
-  overflow: auto;
-  background-color: #EBE9EA;
-}/*# sourceMappingURL=styles.css.map */
