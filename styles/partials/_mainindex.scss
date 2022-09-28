@@ -45,6 +45,7 @@
     background-color: map-get($colores, intermedio);
     box-shadow:  0 0 5px #000;
     .logosImage-Div {
+        /*EXTENDS*/
         @extend %flexDisCenter;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -79,6 +80,7 @@
     }
     .divImgCont-Carosuel {
         width: 550px;
+        /*EXTENDS*/
         @extend %flexDisCenter;
         div{
             width: 100%;
@@ -89,6 +91,7 @@
                 text-decoration: none;
                 p{
                     text-decoration: none;
+                    /*EXTENDS*/
                     @extend %flexDisCenter;
                     margin-right: 30%;
                     margin-bottom: 50%;

@@ -13,6 +13,7 @@
         div {
             margin-top: 40px;
             width: 50%;
+            /*EXTENDS*/
             @extend %flexDisCenter;
             font-size: 20px;
             padding: 50px 0px 50px 0px;

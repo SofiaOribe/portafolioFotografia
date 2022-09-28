@@ -9,6 +9,7 @@
             padding: 50px;
             fieldset {
                 color: map-get($colores, textColor);
+                /*EXTENDS*/
                 @extend %flexDisCenter;
                 border: none;
                 div {
@@ -47,11 +48,13 @@
         }
         .segundaSeccion-Footer {
             padding: 50px;
+            /*EXTENDS*/
             @extend %flexDisCenter;
             align-items: center;
             section{
                 h4 {
                     color: map-get($colores, textColor);
+                    /*EXTENDS*/
                     @extend %flexDisCenter;
                     font-weight: 100;
                     font-size: 20px;
