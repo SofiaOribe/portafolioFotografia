@@ -5,6 +5,7 @@
 
 .botonEnviar {
   width: 100%;
+  /*MIXINS*/
   color: #FBF4EE;
   margin-top: 20px;
   background-color: #222222;
@@ -101,6 +102,7 @@ header .desplegable-options {
   box-shadow: 0 0 5px #000;
 }
 .logosRow .logosImage-Div {
+  /*EXTENDS*/
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -133,6 +135,7 @@ header .desplegable-options {
 }
 .contenFila-Carousel .divImgCont-Carosuel {
   width: 550px;
+  /*EXTENDS*/
 }
 .contenFila-Carousel .divImgCont-Carosuel div {
   width: 100%;
@@ -145,6 +148,7 @@ header .desplegable-options {
 }
 .contenFila-Carousel .divImgCont-Carosuel div a p {
   text-decoration: none;
+  /*EXTENDS*/
   margin-right: 30%;
   margin-bottom: 50%;
   padding: 0%;
@@ -168,6 +172,7 @@ header .desplegable-options {
 }
 .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset {
   color: #000;
+  /*EXTENDS*/
   border: none;
 }
 .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div {
@@ -211,10 +216,12 @@ header .desplegable-options {
 }
 .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer {
   padding: 50px;
+  /*EXTENDS*/
   align-items: center;
 }
 .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer section h4 {
   color: #000;
+  /*EXTENDS*/
   font-weight: 100;
   font-size: 20px;
 }
@@ -231,6 +238,7 @@ header .desplegable-options {
 }
 
 .titlePages-Row {
+  /*EXTENDS*/
   text-align: center;
   margin-top: 150px;
   margin-bottom: 50px;
@@ -240,6 +248,9 @@ header .desplegable-options {
   font-family: "Bodoni Moda";
 }
 
+.portafolioGral div {
+  /*EXTENDS*/
+}
 .portafolioGral div div {
   width: 500px;
   padding: 0%;
@@ -289,6 +300,7 @@ header .desplegable-options {
 }
 
 .contenidoBiblio {
+  /*EXTENDS*/
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -313,6 +325,7 @@ header .desplegable-options {
 
 .formCrearCuenta form {
   width: 100%;
+  /*EXTENDS*/
 }
 .formCrearCuenta form fieldset div input {
   width: 100%;
@@ -353,6 +366,7 @@ header .desplegable-options {
 .seccionesRow .segundoContenidoContacto div {
   margin-top: 40px;
   width: 50%;
+  /*EXTENDS*/
   font-size: 20px;
   padding: 50px 0px 50px 0px;
 }
@@ -394,6 +408,9 @@ header .desplegable-options {
   border-radius: 8px;
 }
 
+.seccionIngresar {
+  /*EXTENDS*/
+}
 .seccionIngresar fieldset div label {
   font-size: 10px;
   color: #000;
@@ -417,6 +434,7 @@ header .desplegable-options {
   box-shadow: 0 0 40px #000000;
 }
 .rowBiblio div {
+  /*EXTENDS*/
   padding-top: 15px;
   padding-bottom: 10px;
 }
@@ -439,6 +457,7 @@ header .desplegable-options {
 }
 
 .ultimoBorde {
+  /*MAPS*/
   background-color: #222222;
   box-shadow: 0 0 40px #000000;
 }
