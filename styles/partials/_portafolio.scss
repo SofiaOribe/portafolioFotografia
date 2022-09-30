@@ -1,0 +1,53 @@
+.portafolioGral div {
+    /*EXTENDS*/
+    @extend %flexDisCenter;
+    div {
+        .interaccionPortafolio {
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: map-get($colores, transparenciaImg);
+            backdrop-filter: blur(3px);
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+            h3 {
+                font-size: 60px;
+                font-family:map-get($fontfamily, fontTitles);
+                font-weight: map-get($tamanos, fontlarge);
+                letter-spacing: -5px;
+                transition: all 500ms ease-out;
+                color: map-get($colores, titlesDecoration);
+                width: 100%;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+        width: 500px;
+        padding: 0%;
+        transition: all 500ms ease-out;
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            img {
+                transition: all 500ms ease-out;
+                transform: scale(1.2);
+            }
+            h3 {
+                margin-top: 60%;
+            }
+            .interaccionPortafolio {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    .portafolioDiv-Img div{
+        width: 500px;
+        padding: 0%;
+    }
+}
+

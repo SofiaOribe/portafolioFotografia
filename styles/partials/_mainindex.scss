@@ -1,0 +1,107 @@
+.historia {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: map-get($colores, intermedio);
+    .historia-Div {
+        div {
+            display: flex;
+            border: none;
+            align-items: center;
+            text-align: center;
+            background-color: map-get($colores, intermedio);
+            color: map-get($colores, colorNavBar);
+            border-radius: 5px;
+            svg {
+                color: map-get($colores, colorNavBar);
+            }
+            .contenidos-TEX {
+                display: flex;
+                flex-direction: column;
+
+                section {
+                    h3 {
+                        font-size: 25px;
+                        font-weight: map-get($tamanos, fontmedium);
+                    }
+                    p {
+                        font-size: 18px;
+                        transition: all 500ms;
+                        &:hover {
+                            color: map-get($colores, titlesDecoration);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/*--------------------------------------------------------------------*/
+
+.logosRow {
+    background-color: map-get($colores, intermedio);
+    box-shadow:  0 0 5px #000;
+    .logosImage-Div {
+        /*EXTENDS*/
+        @extend %flexDisCenter;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        img{
+            height: 50px;
+        }
+    }
+}
+
+/*--------------------------------------------------------------------*/
+
+.contenFila-Carousel {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    .textoCarousel-Left {
+        text-align: center;
+        div {
+            margin-top: 15%;
+            h2 {
+                font-weight:map-get($tamanos, fontsmall);
+                font-size: 45px;
+                color: map-get($colores, titlesDecoration);
+                margin: 0%;
+                padding: 0%;
+            }
+            p {
+                color: map-get($colores, titlesDecoration);
+            }
+        }
+    }
+    .divImgCont-Carosuel {
+        width: 550px;
+        /*EXTENDS*/
+        @extend %flexDisCenter;
+        div{
+            width: 100%;
+            .carousel-indicators {
+                margin: 0%;
+            }
+            a{
+                text-decoration: none;
+                p{
+                    text-decoration: none;
+                    /*EXTENDS*/
+                    @extend %flexDisCenter;
+                    margin-right: 30%;
+                    margin-bottom: 50%;
+                    padding: 0%;
+                    font-family: map-get($fontfamily, fontTitles);
+                    font-weight: 900;
+                    font-size: 60px;
+                    color: map-get($colores, titlesDecoration);
+                }
+            }
+        }
+    }
+}

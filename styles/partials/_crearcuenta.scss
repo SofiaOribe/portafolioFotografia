@@ -1,0 +1,34 @@
+.formCrearCuenta form {
+    width: 100%;
+    /*EXTENDS*/
+    @extend %flexDisCenter;
+    fieldset {
+        div {
+            
+            input {
+                width: 100%;
+                background-color: map-get($colores, lightII);
+                color: map-get($colores, textColor);
+                font-size: 20px;
+                font-family: map-get($fontfamily, fontTitles);
+                font-weight:map-get($tamanos, fontlarge);
+                border-top: transparent;
+                border-color: map-get($colores, textColor);
+                border-right: none;
+                border-left: none;
+            }
+            
+            label {
+                font-size: 10px;
+                color: map-get($colores, textColor);
+            }
+            section {
+                display: flex;
+                justify-content: space-between;
+                .checkboxCrearC {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}

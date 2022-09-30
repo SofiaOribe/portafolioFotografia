@@ -1,0 +1,29 @@
+@import "./partials/maps";
+@import "./partials/extends";
+@import "./partials/mixins";
+@import "./partials/botones";
+@import "./partials/header";
+@import "./partials/mainindex";
+@import "./partials/footerindex";
+@import "./partials/nompaginas";
+@import "./partials/portafolio";
+@import "./partials/bibliografia";
+@import "./partials/crearcuenta";
+@import "./partials/contacto";
+@import "./partials/ingresar";
+@import "./partials/footerpaginas";
+@import "./partials/barrafinal";
+
+
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    transition: 0.1ms;
+} 
+
+body {
+ overflow: auto;
+ background-color: map-get($colores, lightII);
+}

@@ -1,144 +1,112 @@
-* {
-    
-    margin: 0%;
-    padding: 0%;
-    transition: 0.1ms;
+.rowBiblio div, .seccionIngresar, .seccionesRow .segundoContenidoContacto div, .formCrearCuenta form, .contenidoBiblio, .portafolioGral div, .titlePages-Row, .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer section h4, .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer, .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset, .contenFila-Carousel .divImgCont-Carosuel div a p, .contenFila-Carousel .divImgCont-Carosuel, .logosRow .logosImage-Div {
+  display: flex;
+  justify-content: center;
 }
 
-:root {
-    /* COLOR */
-    --darkI: #98979F;
-    --darkII: #A29FA8 ;
-    --intermedio: #acc0d4 ;
-    --light-I: #D6DBE1;
-    --light-II: #EBE9EA;
-    --text-color: #000 ;
-    --titles-decoration: #eb5e28;
-    --color-navBar: #ffffff;
-    --color-botones: #222222 ;
-
-    /* FONT-SIZES */
-    --font-small: 100;
-    --font-medium: 500;
-    --font-large: 900;
-
-    /* FONT-FAMILY */
-    --font-titles: 'Bodoni Moda', serif;
+.botonEnviar {
+  width: 100%;
+  /*MIXINS*/
+  color: #FBF4EE;
+  margin-top: 20px;
+  background-color: #222222;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 500ms;
+  font-family: "Bodoni Moda";
+  font-weight: 900;
+}
+.botonEnviar:hover {
+  background-color: #eb5e28;
+  color: #FBF4EE;
+  border-color: #eb5e28;
 }
 
-body {
- overflow: auto;
- background-color: var(--light-II);
+header .botonMenu-Conten {
+  border: none;
+  padding: 2px;
+  margin: 10px;
+  transition: all 500ms;
+  background-color: rgba(251, 244, 238, 0.5);
+  color: #000;
+}
+header .title {
+  font-size: 900;
+  font-family: "Bodoni Moda";
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: -10px;
+  color: #ffffff;
+  padding: 0%;
+  transition: all 500ms;
+}
+header .title:hover {
+  color: #000;
+}
+header .offcanvas-body ul li a {
+  color: #ffffff;
+}
+header .offcanvas-body ul li a:hover {
+  color: #eb5e28;
+}
+header .barraDesplegable-Menu {
+  background-color: rgba(251, 244, 238, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  color: #ffffff;
+}
+header .desplegable-options {
+  background-color: rgba(251, 244, 238, 0);
+  border: none;
 }
 
-
-
-.botonMenu-Conten { /*button -> span (elemento icono)*/
-    border: none;
-    padding: 2px;
-    margin: 10px;
-    transition: all 500ms;
-    background-color: #ffffff65;
-}
-.botonMenu-Conten { /*button -> span (elemento icono)*/
-    color: #000;
-}
-
-
-
-.title {
-    font-size: var(--font-large);   
-    font-family: var(--font-titles);
-    font-size: 70px;
-    font-weight: bold;
-    letter-spacing: -10px;
-    color: #ffffff;padding: 0%;
-    transition: all 500ms;
-}
-
-header a h1:hover {
-    color: var(--text-color);
-}
-.offcanvas-body ul li a:hover {
-    color: var(--titles-decoration);
-}
-
-.barraDesplegable-Menu {
-    background-color: rgba(251, 244, 238, 0.5);
-    backdrop-filter: blur(4px);
-    color: var(--color-navBar);
-}
-
-.desplegable-options {
-    background-color: rgba(251, 244, 238, 0);
-    border: none;
-}
-
-.options {
-    color: var(--color-navBar);
-}
-
-
-/*--------------------------------------------------------------------*/
 .historia {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    background-color: var(--intermedio);
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #acc0d4;
 }
-
-/* AGREGADO DE TRANSICION */
-.historia-Div div{
-    display: flex;
-    border: none;
-    align-items: center;
-    text-align: center;
-    background-color: var(--intermedio);
-    border-radius: 5px;
+.historia .historia-Div div {
+  display: flex;
+  border: none;
+  align-items: center;
+  text-align: center;
+  background-color: #acc0d4;
+  color: #ffffff;
+  border-radius: 5px;
 }
-
-.historia-Div div p {
-    transition: all 500ms;
+.historia .historia-Div div svg {
+  color: #ffffff;
 }
-
-.historia-Div div p:hover {
-    color: var(--titles-decoration);
+.historia .historia-Div div .contenidos-TEX {
+  display: flex;
+  flex-direction: column;
 }
-
-.iconosCard {
-    color: var(--color-navBar);
+.historia .historia-Div div .contenidos-TEX section h3 {
+  font-size: 25px;
+  font-weight: 500;
 }
-
-
-.textCard {
-    color: var(--color-navBar);
-    font-size: 18px;
+.historia .historia-Div div .contenidos-TEX section p {
+  font-size: 18px;
+  transition: all 500ms;
 }
-
-.contenidos-TEX {
-    display: flex;
-    flex-direction: column;
-}
-
-.textosH3-card h3{
-    color: var(--color-navBar);
-    font-size: 25px;
-    font-weight: 600;
+.historia .historia-Div div .contenidos-TEX section p:hover {
+  color: #eb5e28;
 }
 
 /*--------------------------------------------------------------------*/
 .logosRow {
-    background-color: var(--intermedio);
-    box-shadow:  0 0 5px #000;
+  background-color: #acc0d4;
+  box-shadow: 0 0 5px #000;
 }
-
-.logosImage-Div {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.logosRow .logosImage-Div {
+  /*EXTENDS*/
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+<<<<<<< HEAD
 .logosImage-Div img{
     height: 50px;
 }
@@ -154,12 +122,20 @@ header a h1:hover {
     font-size: 45px;
     color: var(--titles-decoration);
 }
-.contenFila-Carousel {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: space-around;
+=======
+.logosRow .logosImage-Div img {
+  height: 50px;
 }
+
+/*--------------------------------------------------------------------*/
+>>>>>>> sass
+.contenFila-Carousel {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+<<<<<<< HEAD
 
 .textoCarousel-Left {
     text-align: center;
@@ -176,425 +152,370 @@ header a h1:hover {
     width: 550px;
     display: flex;
     justify-content: center;
+=======
+.contenFila-Carousel .textoCarousel-Left {
+  text-align: center;
 }
-.divImgCont-Carosuel div{
-    width: 100%
+.contenFila-Carousel .textoCarousel-Left div {
+  margin-top: 15%;
 }
-.carousel-indicators {
-    margin: 0%;
+.contenFila-Carousel .textoCarousel-Left div h2 {
+  font-weight: 100;
+  font-size: 45px;
+  color: #eb5e28;
+  margin: 0%;
+  padding: 0%;
+>>>>>>> sass
 }
-
-.titleCarousel a{
-    text-decoration: none;
+.contenFila-Carousel .textoCarousel-Left div p {
+  color: #eb5e28;
 }
-
-.titleCarousel p{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 52%;
-    margin-right: 30%;
-    padding: 0%;
-    font-family: var(--font-titles);
-    font-weight: 900;
-    font-size: 70px;
-    color: var(--titles-decoration) ;
+.contenFila-Carousel .divImgCont-Carosuel {
+  width: 550px;
+  /*EXTENDS*/
 }
-
-/*--------------------------------------------------------------------*/
-
-
-
-
-/*--------------------------------------------------------------------*/
-
+.contenFila-Carousel .divImgCont-Carosuel div {
+  width: 100%;
+}
+.contenFila-Carousel .divImgCont-Carosuel div .carousel-indicators {
+  margin: 0%;
+}
+.contenFila-Carousel .divImgCont-Carosuel div a {
+  text-decoration: none;
+}
+.contenFila-Carousel .divImgCont-Carosuel div a p {
+  text-decoration: none;
+  /*EXTENDS*/
+  margin-right: 30%;
+  margin-bottom: 50%;
+  padding: 0%;
+  font-family: "Bodoni Moda";
+  font-weight: 900;
+  font-size: 60px;
+  color: #eb5e28;
+}
 
 .abarcadoUno {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--titles-decoration);
+  display: flex;
+  justify-content: space-around;
+  background-color: #eb5e28;
 }
-.contenColumnas-Row {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.abarcadoUno .contenColumnas-Row {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.abarcadoUno .contenColumnas-Row .primeraSeccion-Footer {
+  padding: 50px;
+}
+.abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset {
+  color: #000;
+  /*EXTENDS*/
+  border: none;
+}
+.abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div {
+  text-align: center;
+}
+.abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div ::-moz-placeholder {
+  color: #000;
+  font-family: "Bodoni Moda";
+}
+.abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div :-ms-input-placeholder {
+  color: #000;
+  font-family: "Bodoni Moda";
+}
+.abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div ::placeholder {
+  color: #000;
+  font-family: "Bodoni Moda";
+}
+.abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div h5 {
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 20px;
+}
+.abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div input {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #eb5e28;
+  font-size: 35px;
+  font-weight: 900;
+  font-family: "Bodoni Moda";
+  border-top: transparent;
+  border-color: #000;
+  border-right: none;
+  border-left: none;
+}
+.abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset div label {
+  color: #000;
+  font-size: 14px;
+  font-weight: 100;
+  display: flex;
+  justify-content: left;
+}
+.abarcadoUno .contenColumnas-Row .segundaSeccion-Footer {
+  padding: 50px;
+  /*EXTENDS*/
+  align-items: center;
+}
+.abarcadoUno .contenColumnas-Row .segundaSeccion-Footer section h4 {
+  color: #000;
+  /*EXTENDS*/
+  font-weight: 100;
+  font-size: 20px;
+}
+.abarcadoUno .contenColumnas-Row .segundaSeccion-Footer section div {
+  margin-top: 20px;
+  text-align: center;
+}
+.abarcadoUno .contenColumnas-Row .segundaSeccion-Footer section div a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  font-weight: 100;
+  font-size: 10px;
 }
 
-.primeraSeccion-Footer {
-    padding: 50px;
+.titlePages-Row {
+  /*EXTENDS*/
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
-.segundaSeccion-Footer {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.formIndex fieldset{
-    color: #000000;
-    display: flex;
-    justify-content: center;
-    border: none;
+.titlePages-Row h5 {
+  color: #000;
+  font-family: "Bodoni Moda";
 }
 
-.divPiepagina {
-    text-align: center;
+.portafolioGral div {
+  /*EXTENDS*/
 }
-.divPiepagina ::placeholder {
-    color: #000000;
-    font-family: var(--font-titles);
+.portafolioGral div div {
+  width: 500px;
+  padding: 0%;
+  transition: all 500ms ease-out;
+  position: relative;
+  overflow: hidden;
+}
+.portafolioGral div div .interaccionPortafolio {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(251, 244, 238, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.portafolioGral div div .interaccionPortafolio h3 {
+  font-size: 60px;
+  font-family: "Bodoni Moda";
+  font-weight: 900;
+  letter-spacing: -5px;
+  transition: all 500ms ease-out;
+  color: #eb5e28;
+  width: 100%;
+}
+.portafolioGral div div .interaccionPortafolio a {
+  text-decoration: none;
+}
+.portafolioGral div div:hover img {
+  transition: all 500ms ease-out;
+  transform: scale(1.2);
+}
+.portafolioGral div div:hover h3 {
+  margin-top: 60%;
+}
+.portafolioGral div div:hover .interaccionPortafolio {
+  opacity: 1;
+  visibility: visible;
+}
+.portafolioGral div .portafolioDiv-Img div {
+  width: 500px;
+  padding: 0%;
 }
 
-#piePaginaNewsletter {
-    letter-spacing: 1.5px;
-    font-weight: 100;
-    font-size: 20px;
+.contenidoBiblio {
+  /*EXTENDS*/
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contenidoBiblio section {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0%;
+  margin-bottom: 50px;
+}
+.contenidoBiblio section .imagenesBiblio {
+  width: 500px;
+}
+.contenidoBiblio section .parrafosDiv {
+  width: 500px;
+}
+.contenidoBiblio section .parrafosDiv p {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-#suscribir {
-    width: 100%;
-    margin-top: 20px;
-    background-color: #eb5e28;
-    font-size: 35px;
-    font-weight: 900;
-    font-family: var(--font-titles);
-    border-top: transparent;
-    border-color: #000000;
-    border-right: none;
-    border-left: none;
+.formCrearCuenta form {
+  width: 100%;
+  /*EXTENDS*/
+}
+.formCrearCuenta form fieldset div input {
+  width: 100%;
+  background-color: #EBE9EA;
+  color: #000;
+  font-size: 20px;
+  font-family: "Bodoni Moda";
+  font-weight: 900;
+  border-top: transparent;
+  border-color: #000;
+  border-right: none;
+  border-left: none;
+}
+.formCrearCuenta form fieldset div label {
+  font-size: 10px;
+  color: #000;
+}
+.formCrearCuenta form fieldset div section {
+  display: flex;
+  justify-content: space-between;
+}
+.formCrearCuenta form fieldset div section .checkboxCrearC {
+  width: 20px;
 }
 
-#piePaginaCorreo {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 100;
-    display: flex;
-    justify-content: left;
+.seccionesRow .segundoContenidoContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionesRow .segundoContenidoContacto p {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  text-align: center;
+}
+.seccionesRow .segundoContenidoContacto div {
+  margin-top: 40px;
+  width: 50%;
+  /*EXTENDS*/
+  font-size: 20px;
+  padding: 50px 0px 50px 0px;
+}
+.seccionesRow .segundoContenidoContacto div h6 {
+  color: #000;
+  font-weight: 100;
+}
+.seccionesRow .primerContenidoContacto fieldset div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.seccionesRow .primerContenidoContacto fieldset div input {
+  background-color: #EBE9EA;
+  font-size: 20px;
+  font-family: "Bodoni Moda";
+  font-weight: 900;
+  border-top: transparent;
+  border-left: none;
+  border-right: none;
+  width: 50%;
+}
+.seccionesRow .primerContenidoContacto fieldset div label {
+  font-size: 10px;
+  margin-top: 0;
+}
+.seccionesRow .primerContenidoContacto fieldset div h6 {
+  font-size: 10px;
+  font-weight: 100;
+}
+.seccionesRow .primerContenidoContacto fieldset div textarea {
+  display: flex;
+  background-color: #EBE9EA;
+  margin-bottom: 1px;
+  padding: 0%;
+  height: 100px;
+  width: 99%;
+  border-color: #CECECE;
+  border-radius: 8px;
 }
 
-#titleRedes {
-    display: flex;
-    justify-content: center;
-    font-weight: 100;
-    font-size: 20px;
+.seccionIngresar {
+  /*EXTENDS*/
+}
+.seccionIngresar fieldset div label {
+  font-size: 10px;
+  color: #000;
+}
+.seccionIngresar fieldset div input {
+  width: 100%;
+  background-color: #EBE9EA;
+  color: #000;
+  font-size: 20px;
+  font-family: "Bodoni Moda";
+  font-weight: 900;
+  border-top: transparent;
+  border-color: #000;
+  border-right: none;
+  border-left: none;
 }
 
-.RedesPrincipal {
-    margin-top: 20px;
-    text-align: center;
+.rowBiblio {
+  margin-top: 100px;
+  background-color: #222222;
+  box-shadow: 0 0 40px #000000;
 }
-.RedesPrincipal a {
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 5px;
-    font-weight: 100;
-    font-size: 10px;
+.rowBiblio div {
+  /*EXTENDS*/
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.rowBiblio div section {
+  text-align: center;
+}
+.rowBiblio div section h4 {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 0%;
+}
+.rowBiblio div section div a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .ultimoBorde {
-    background-color: #222222;
-    box-shadow: 0 0 40px #000000;
+  /*MAPS*/
+  background-color: #222222;
+  box-shadow: 0 0 40px #000000;
 }
-.ultimoBorde-Div {
-    margin: 20px;
+.ultimoBorde div {
+  margin: 20px;
 }
-
-#copyright {
-    margin: 10px;
-    color: #ffffff;
-    font-size: 10px;
-    font-weight: 100;
-    text-align: center;
-}
-
-
-.iconosRedes {
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-    margin: 40px;
-    padding: 5px;
-}
-/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
-.titlePages-Row {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 50px;
-}
-.titlePages {
-    color: var(--text-color);
-    font-family: var(--font-titles);
-
+.ultimoBorde div h6 {
+  margin: 10px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 100;
+  text-align: center;
 }
 
-/*--------------------------------------------------------------------*/
-
-
-/*PORTAFOLIO*/
-
-
-.portafolioGral div {
-    display: flex;
-    justify-content: center;
-}
-.portafolioSection div {
-    width: 500px;
-    padding: 0%;
-    transition: all 500ms ease-out;
+* {
+  margin: 0%;
+  padding: 0%;
+  transition: 0.1ms;
 }
 
-.portafolioSection div {
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.portafolioSection div .interaccionPortafolio {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(251, 244, 238, 0.5);
-    backdrop-filter: blur(3px);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-.portafolioSection  div:hover > .interaccionPortafolio {
-    opacity: 1;
-    visibility: visible;
-}
-.portafolioSection  div:hover > .interaccionPortafolio h3 {
-    margin-top: 70%;
-}
-
-.portafolioSection  div:hover > img {
-    transition: all 500ms ease-out;
-    transform: scale(1.2);
-}
-
-.portafolioSection div .interaccionPortafolio h3{
-    font-size: 60px;
-    font-family: var(--font-titles);
-    font-weight: 900;
-    letter-spacing: -5px;
-    transition: all 500ms ease-out;
-    color: var(--titles-decoration);
-    width: 100%;
-}
-
-.interaccionPortafolio a {
-    text-decoration: none;
-}
-
-.portafolioDiv-Img div{
-    width: 500px;
-    padding: 0%;
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.contenidoBiblio {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.contBiblio-Section {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0%;
-    margin-bottom: 50px;
-}
-.imagenesBiblio {
-    width: 500px;
-}
-.parrafosDiv {
-    width: 500px;
-}
-#parrafoBibliografia {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-}
-
-
-/*FOOTER*/
-.rowBiblio {
-    margin-top: 100px;
-    background-color: #222222;
-    box-shadow: 0 0 40px #000000;
-}
-.segundaSeccion-Footer {
-    padding: 30px;
-}
-.demasSecciones h4 {
-    color: var(--color-navBar);
-}
-.demasSecciones a {
-    color: var(--color-navBar);
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-#loremContacto {
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    text-align: center;
-}
-
-.contenidoDeContacto{
-    display: flex;
-    justify-content: space-around;
-}
-
-.fieldsetContacto {   
-    border: none;
-}
-.bloqueContactoFormulario {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.formContacto {
-    background-color: var(--light-II);
-    font-size: 20px;
-    font-family: var(--font-titles);
-    font-weight: var(--font-large);
-    border-top: transparent;
-    border-left: none;
-    border-right: none;
-    width: 50%;
-}
-.bloqueContactoFormulario label{
-    font-size: 10px;
-    margin-top: 0;
-}
-
-.bloqueContactoFormulario h6{
-    font-size: 10px;
-    font-weight: 100;
-}
-
-#textareaContacto {
-    display: flex;
-    background-color: var(--light-II);
-    margin-bottom: 1px;
-    padding: 0%;
-    height: 100px;
-    width: 99%;
-    border-color: #CECECE;
-    border-radius: 8px;
-}
-.segundoContenidoContacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.pieContacto {
-    margin-top: 40px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    padding: 50px 0px 50px 0px;
-}
-
-.buttonsContactoIconos{
-    width: 50%;
-    display: flex;
-    justify-content:space-around;
-    margin-bottom: 50px;
-}
-
-#numeroTelefono {
-    color: #03071E;
-    font-weight: var(--font-small);
-}
-
-.botonEnviar {
-    margin-top: 20px;
-    color: #FBF4EE;
-    background-color: var(--color-botones);
-    border-radius: 5px;
-    font-size: 15px;
-    padding: 10px;
-    cursor: pointer;
-    transition: all 500ms;   
-    font-family: var(--font-titles);
-    font-weight: var(--font-large);
-}
-
-.botonEnviar:hover {
-    background-color: var(--titles-decoration);
-    color: #FBF4EE;
-    border-color:var(--titles-decoration);
-}
-
- /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/
-/* INGRESAR */
-.seccionIngresar {
-    display: flex;
-    justify-content: center;
-}
-
-.divIngresar label {
-    font-size: 10px;
-    color: #000000;
-}
-
-.IngresarInput {
-    width: 100%;
-    background-color: var(--light-II);
-    color: #03071E;
-    font-size: 20px;
-    font-family: var(--font-titles);
-    font-weight: var(--font-large);
-    border-top: transparent;
-    border-color: #000000;
-    border-right: none;
-    border-left: none;
-}
-
-.boton {
-    display: flex;
-    justify-content: center;
-}
-
-
- /*---------------------------------------------------------------------GRID--FLEX------------------------------------------------------------------------*/
-
- /*CREAR CUENTA*/
-
- .formCrearCuenta form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.CrearCuentaInput {
-    width: 100%;
-    background-color: var(--light-II);
-    color: #03071E;
-    font-size: 20px;
-    font-family: var(--font-titles);
-    font-weight: var(--font-large);
-    border-top: transparent;
-    border-color: #000000;
-    border-right: none;
-    border-left: none;
-}
-
-.divCrearCuenta label {
-    font-size: 10px;
-    color: #000000;
-}
+body {
+  overflow: auto;
+  background-color: #EBE9EA;
+}/*# sourceMappingURL=styles.css.map */

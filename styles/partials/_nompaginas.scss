@@ -1,0 +1,11 @@
+.titlePages-Row {
+    /*EXTENDS*/
+    @extend %flexDisCenter;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    h5 {
+        color: map-get($colores, textColor);
+        font-family: map-get($fontfamily, fontTitles);
+    }
+}

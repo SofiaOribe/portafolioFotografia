@@ -1,0 +1,20 @@
+.botonEnviar {
+    width: 100%;
+
+    /*MIXINS*/
+    @include boton($color:#FBF4EE, $margintop: 20px);
+    
+    background-color: map-get($colores, colorBotones);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 500ms;   
+    font-family: map-get($fontfamily, fontTitles);
+    font-weight: map-get($tamanos, fontlarge);
+    &:hover {
+        background-color: map-get($colores, titlesDecoration);
+        color: #FBF4EE;
+        border-color: map-get($colores, titlesDecoration);
+    }
+}
