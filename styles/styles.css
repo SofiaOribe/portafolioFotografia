@@ -29,7 +29,6 @@ header .botonMenu-Conten {
   margin: 10px;
   transition: all 500ms;
   background-color: rgba(251, 244, 238, 0.5);
-  color: #000;
 }
 header .title {
   font-size: 900;
@@ -38,7 +37,7 @@ header .title {
   font-weight: 900;
   letter-spacing: -10px;
   color: #ffffff;
-  padding: 0%;
+  padding-left: 10px;
   transition: all 500ms;
 }
 header .title:hover {
@@ -62,6 +61,7 @@ header .desplegable-options {
 }
 
 .historia {
+  box-shadow: 0 0 5px #000;
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
@@ -74,15 +74,18 @@ header .desplegable-options {
   align-items: center;
   text-align: center;
   background-color: #acc0d4;
-  color: #ffffff;
+  color: #222222;
   border-radius: 5px;
 }
 .historia .historia-Div div svg {
-  color: #ffffff;
+  color: #222222;
 }
 .historia .historia-Div div .contenidos-TEX {
   display: flex;
   flex-direction: column;
+}
+.historia .historia-Div div .contenidos-TEX section {
+  font-family: "Times New Roman", Times, serif;
 }
 .historia .historia-Div div .contenidos-TEX section h3 {
   font-size: 25px;
@@ -91,9 +94,6 @@ header .desplegable-options {
 .historia .historia-Div div .contenidos-TEX section p {
   font-size: 18px;
   transition: all 500ms;
-}
-.historia .historia-Div div .contenidos-TEX section p:hover {
-  color: #eb5e28;
 }
 
 /*--------------------------------------------------------------------*/
@@ -358,7 +358,7 @@ header .desplegable-options {
 }
 .seccionesRow .segundoContenidoContacto p {
   padding: 20px;
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: left;
   text-align: center;

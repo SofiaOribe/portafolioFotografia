@@ -1,11 +1,12 @@
 header {
+    
     .botonMenu-Conten  {
         border: none;
         padding: 2px;
         margin: 10px;
         transition: all 500ms;
         background-color: map-get($colores, menuDesplegable);
-        color: map-get($colores, textColor);
+        color: map-get($colores, text-decoration);
     }
     .title {
         font-size: map-get($tamanos, fontlarge);   
@@ -14,7 +15,7 @@ header {
         font-weight: map-get($tamanos, fontlarge);
         letter-spacing: -10px;
         color: map-get($colores, colorNavBar);
-        padding: 0%;
+        padding-left: 10px;
         transition: all 500ms;
             &:hover {
                 color: map-get($colores, textColor);

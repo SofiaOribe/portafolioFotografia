@@ -1,4 +1,5 @@
 .historia {
+    box-shadow:  0 0 5px #000;
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
@@ -11,16 +12,17 @@
             align-items: center;
             text-align: center;
             background-color: map-get($colores, intermedio);
-            color: map-get($colores, colorNavBar);
+            color: map-get($colores, colorBotones);
             border-radius: 5px;
             svg {
-                color: map-get($colores, colorNavBar);
+                color: map-get($colores, colorBotones);
             }
             .contenidos-TEX {
                 display: flex;
                 flex-direction: column;
 
                 section {
+                    font-family: 'Times New Roman', Times, serif;
                     h3 {
                         font-size: 25px;
                         font-weight: map-get($tamanos, fontmedium);
@@ -28,9 +30,6 @@
                     p {
                         font-size: 18px;
                         transition: all 500ms;
-                        &:hover {
-                            color: map-get($colores, titlesDecoration);
-                        }
                     }
                 }
             }
@@ -65,6 +64,7 @@
     .textoCarousel-Left {
         text-align: center;
         div {
+            
             margin-top: 15%;
             h2 {
                 font-weight:map-get($tamanos, fontsmall);
