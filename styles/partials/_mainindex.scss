@@ -1,6 +1,6 @@
 .historia {
     box-shadow:  0 0 5px #000;
-    margin-top: 100px;
+    margin-top: 170px;
     display: flex;
     justify-content: space-around;
     padding: 50px;
@@ -57,36 +57,44 @@
 /*--------------------------------------------------------------------*/
 
 .contenFila-Carousel {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: space-around;
-    .textoCarousel-Left {
+    margin-top: 170px;
+    margin-bottom:  170px;
+    background-color: rgb(41, 40, 40);
+    box-shadow:  0 0 5px #000;
+    @extend %flexDisCenter;
+
+    .carouselRow-Title {
+        background-color: rgb(50, 50, 50);
+        height: 100px;
+        box-shadow:  0 0 5px #000;
         text-align: center;
-        div {
-            
-            margin-top: 15%;
-            h2 {
-                font-weight:map-get($tamanos, fontsmall);
-                font-size: 45px;
-                color: map-get($colores, titlesDecoration);
-                margin: 0%;
-                padding: 0%;
-            }
-            p {
-                color: map-get($colores, titlesDecoration);
-            }
+        display: flex;
+        align-items: center;
+        h2 {
+            font-size: 40px;
+            padding-left: 30px;
+            margin: 0%;
+            font-weight: map-get($tamanos, fontlarge);
+            color: map-get($colores, colorNavBar);
+            font-family: map-get($fontfamily, fontTitles);
         }
     }
+
     .divImgCont-Carosuel {
+        margin-top: 100px;
+        margin-bottom: 100px;
         width: 550px;
+        padding: 0%;
+        box-shadow:  0 0 10px #000;
         /*EXTENDS*/
         @extend %flexDisCenter;
         div{
             width: 100%;
+            
             .carousel-indicators {
                 margin: 0%;
             }
+            
             a{
                 text-decoration: none;
                 p{

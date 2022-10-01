@@ -1,4 +1,4 @@
-.rowBiblio div, .seccionIngresar, .seccionesRow .segundoContenidoContacto div, .formCrearCuenta form, .contenidoBiblio, .portafolioGral div, .titlePages-Row, .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer section h4, .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer, .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset, .contenFila-Carousel .divImgCont-Carosuel div a p, .contenFila-Carousel .divImgCont-Carosuel, .logosRow .logosImage-Div {
+.rowBiblio div, .seccionIngresar, .seccionesRow .segundoContenidoContacto div, .formCrearCuenta form, .contenidoBiblio, .portafolioGral div, .titlePages-Row, .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer section h4, .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer, .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset, .contenFila-Carousel .divImgCont-Carosuel div a p, .contenFila-Carousel .divImgCont-Carosuel, .contenFila-Carousel, .logosRow .logosImage-Div {
   display: flex;
   justify-content: center;
 }
@@ -62,7 +62,7 @@ header .desplegable-options {
 
 .historia {
   box-shadow: 0 0 5px #000;
-  margin-top: 100px;
+  margin-top: 170px;
   display: flex;
   justify-content: space-around;
   padding: 50px;
@@ -112,29 +112,33 @@ header .desplegable-options {
 
 /*--------------------------------------------------------------------*/
 .contenFila-Carousel {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: space-around;
+  margin-top: 170px;
+  margin-bottom: 170px;
+  background-color: rgb(41, 40, 40);
+  box-shadow: 0 0 5px #000;
 }
-.contenFila-Carousel .textoCarousel-Left {
+.contenFila-Carousel .carouselRow-Title {
+  background-color: rgb(50, 50, 50);
+  height: 100px;
+  box-shadow: 0 0 5px #000;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
-.contenFila-Carousel .textoCarousel-Left div {
-  margin-top: 15%;
-}
-.contenFila-Carousel .textoCarousel-Left div h2 {
-  font-weight: 100;
-  font-size: 45px;
-  color: #eb5e28;
+.contenFila-Carousel .carouselRow-Title h2 {
+  font-size: 40px;
+  padding-left: 30px;
   margin: 0%;
-  padding: 0%;
-}
-.contenFila-Carousel .textoCarousel-Left div p {
-  color: #eb5e28;
+  font-weight: 900;
+  color: #ffffff;
+  font-family: "Bodoni Moda";
 }
 .contenFila-Carousel .divImgCont-Carosuel {
+  margin-top: 100px;
+  margin-bottom: 100px;
   width: 550px;
+  padding: 0%;
+  box-shadow: 0 0 10px #000;
   /*EXTENDS*/
 }
 .contenFila-Carousel .divImgCont-Carosuel div {
