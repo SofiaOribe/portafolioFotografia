@@ -23,62 +23,71 @@
 </head>
     <body class="container-fluid">
 
-        <div class="row">
-            <a class="navbar-brand title" href="#">MARKSIM</a>
-        </div>
-
         <header>
             <div class="row">
                 <div class="col">
 
-                    <nav class="navbar navbar-expand-lg ">
+                    <nav class="navbar fixed-top">
+
                         <div class="container-fluid">
 
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
+                          <a class="navbar-brand" href="./index.html"><h1 class="title">MARKSIM</h1></a>
 
-                            <div class="collapse navbar-collapse contenOpciones" id="navbarNavDropdown">
+                            <button class="navbar-toggler botonMenu-Conten" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
 
-                                <ul class="navbar-nav">
+                          <div class="offcanvas offcanvas-end barraDesplegable-Menu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">INICIO</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        PORTAFOLIO
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Aventura</a></li>
-                                        <li><a class="dropdown-item" href="#">Blanco y Negro</a></li>
-                                        <li><a class="dropdown-item" href="#">Dos</a></li>
-                                        <li><a class="dropdown-item" href="#">Estudio</a></li>
-                                        <li><a class="dropdown-item" href="#">Modelo Artista</a></li>
-                                        <li><a class="dropdown-item" href="#">Urbano</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">BIBLIOGRAFÍA</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">CONTACTO</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">INICIAR SESIÓN</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">CREAR CUENTA</a>
-                                    </li>
-                                
-                                </ul>
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
-                        </div>
-                    </nav>
 
+                            <div class="offcanvas-body">
+
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <li class="nav-item ">
+                                  <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portafolio</a>
+                                    <ul class="dropdown-menu desplegable-options">
+                                      <li><a class="dropdown-item" href="./pages/portafolio.html">Portafolio</a></li>
+                                      <li><a class="dropdown-item" href="./pages/portafolioestudio.html">Estudio</a></li>
+                                      <li><a class="dropdown-item" href="./pages/portafolioblancoynegro.html">Blanco y negro</a></li>
+                                      <li><a class="dropdown-item" href="./pages/portafoliomodelartist.html">Modelo Artista</a></li>
+                                      <li><a class="dropdown-item" href="./pages/portafoliourbano.html">Urbano</a></li>
+                                      <li><a class="dropdown-item" href="./pages/portafoliotwo.html">Dos</a></li>
+                                      <li><a class="dropdown-item " href="./pages/portafolioaventura.html">Aventura</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="./pages/bibliografia.html">Acerca de</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/ingresar.html">Iniciar sesion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="./pages/crearcuenta.html">Crear Cuenta</a>
+                                </li>
+
+                              </ul>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
                 </div>
             </div>
         </header>
+
+
+
         <main>
 
             <section class="row">

@@ -1,13 +1,44 @@
 header {
-    div {
-        display: flex;
-        justify-content: center;
-        nav {
-            li {
-                padding-left: 25px;
-                padding-right: 25px;
-                
+    .botonMenu-Conten  {
+        border: none;
+        padding: 2px;
+        margin: 10px;
+        transition: all 500ms;
+        background-color: map-get($colores, menuDesplegable);
+        color: map-get($colores, textColor);
+    }
+    .title {
+        font-size: map-get($tamanos, fontlarge);   
+        font-family: map-get($fontfamily, fontTitles);
+        font-size: 70px;
+        font-weight: map-get($tamanos, fontlarge);
+        letter-spacing: -10px;
+        color: map-get($colores, colorNavBar);
+        padding: 0%;
+        transition: all 500ms;
+            &:hover {
+                color: map-get($colores, textColor);
+            }
+    }
+    .offcanvas-body{
+        ul{
+            li{
+                a{
+                    color: map-get($colores, colorNavBar); 
+                    &:hover {
+                        color: map-get($colores, titlesDecoration);
+                    }
+                }
             }
         }
+    }
+    .barraDesplegable-Menu {
+        background-color: map-get($colores, menuDesplegable);
+        backdrop-filter: blur(4px);
+        color: map-get($colores, colorNavBar);
+    }
+    .desplegable-options {
+        background-color: map-get($colores, fondoPortafolioMenu);
+        border: none;
     }
 }
