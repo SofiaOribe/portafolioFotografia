@@ -2,6 +2,7 @@
 @import "./partials/extends";
 @import "./partials/mixins";
 @import "./partials/botones";
+@import "./partials/titleMarksim";
 @import "./partials/header";
 @import "./partials/mainindex";
 @import "./partials/footerindex";
@@ -22,6 +23,7 @@
 } 
 
 body {
- overflow: auto;
- background-color: map-get($colores, lightII);
+    overflow: auto;
+    background-color: map-get($colores, colorNavBar);
+    font-family: 'Times New Roman', Times, serif;
 }
