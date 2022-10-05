@@ -1,7 +1,7 @@
 header {
     nav {
-        background-color: #acc0d4;
-        box-shadow: 0 0 5px #000;
+        background-color: #cbd8e4;
+        box-shadow: 0 0 35px rgba(0, 0, 0, 0.607);
         
         div {
             .title {
@@ -11,7 +11,7 @@ header {
                 font-weight: map-get($tamanos, fontlarge);
                 color: map-get($colores, colorBotones);
                 padding-left: 10px;
-                transition: all 500ms;
+                transition: all 400ms;
                 &:hover {
                     color: map-get($colores, colorNavBar);
                 }
@@ -24,10 +24,25 @@ header {
                         padding-left: 20px;
                         padding-right: 20px;
                         a {
-                            color: map-get($colores, colorBotones);
-                            font-size: 15px;
+                            color: #333434ce;
+                            font-size: 13px;
+                            transition: all 400ms;
+                            font-weight: map-get($tamanos, fontmedium);
                             &:hover {
                                 color: map-get($colores, colorNavBar);
+                            }
+                        }
+                        .opPortafolio-Ul {
+                            margin-top: 20px;
+                            background-color:  #cbd8e4;
+                            border: none;
+                            box-shadow: 0 0 25px rgba(0, 0, 0, 0.607);
+                            li {
+                                margin: 5px;
+                                padding: 5px;
+                                a{
+                                    text-decoration: none;
+                                }
                             }
                         }
                     }

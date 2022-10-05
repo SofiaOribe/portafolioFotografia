@@ -24,4 +24,5 @@
 body {
     overflow: auto;
     background-color: map-get($colores, colorNavBar);
+    background-color: map-get($colores, lightII);
 }

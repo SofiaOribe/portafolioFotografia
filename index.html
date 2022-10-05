@@ -27,7 +27,7 @@
             <nav class="navbar navbar-expand-lg fixed-top">
 
                 <div class="container-fluid">
-                  <a class="navbar-brand title" href="#">MARKSIM</a>
+                  <a class="navbar-brand title" href="./index.html">MARKSIM</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -50,16 +50,15 @@
                                 <a class="nav-link" href="./pages/crearcuenta.html">CREAR CUENTA</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="./pages/portafolio.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                PORTAFOLIO
-                                </a>
-                                <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./pages/portafolioaventura.html">Aventura</a></li>
-                                <li><a class="dropdown-item" href="./pages/portafolioblancoynegro.html">Blanco y Negro</a></li>
-                                <li><a class="dropdown-item" href="./pages/portafoliotwo.html">Dos</a></li>
-                                <li><a class="dropdown-item" href="./pages/portafolioestudio.html">Estudio</a></li>
-                                <li><a class="dropdown-item" href="./pages/portafoliomodelartist.html">Modelo Artista</a></li>
-                                <li><a class="dropdown-item" href="./pages/portafoliourbano.html">Urbano</a></li>
+                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">PORTAFOLIO</a>
+                                <ul class="dropdown-menu opPortafolio-Ul">
+                                    <li><a href="./pages/portafolio.html">Portafolio general</a></li>
+                                    <li><a href="./pages/portafolioaventura.html">Aventura</a></li>
+                                    <li><a href="./pages/portafolioblancoynegro.html">Blanco y Negro</a></li>
+                                    <li><a href="./pages/portafoliotwo.html">Dos</a></li>
+                                    <li><a href="./pages/portafolioestudio.html">Estudio</a></li>
+                                    <li><a href="./pages/portafoliomodelartist.html">Modelo Artista</a></li>
+                                    <li><a href="./pages/portafoliourbano.html">Urbano</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -75,11 +74,7 @@
         <main>
 
             <section class="row">
-                <section class="col imagenPrincipal-Div ">
-
-                    <div class="col-12" >
-                        <img src="./image/principal3.jpg" class="img-fluid w-100" alt="Imagen principal">
-                    </div>
+                <section class="col parallax img-uno">
 
                 </section>
             </section>
@@ -178,13 +173,17 @@
 
                     <div class="row contenFila-Carousel">
 
-                        <div class="col-xl-12 col-sm-12">
-                            <div class="row carouselRow-Title">
-                                <h2>DESTACADOS</h2>
-                            </div>
+                        <div class="col-xl-5 col-sm-12 carouselRow-Title">
+                            <div class="row">
+                                <h2>Destacados</h2>
+                                <p>Aquí vas a poder encontrar algunos de mis trabajos preferidos y más elogiados hasta el momento.</p>
+                                <br><br><br><br>
+                                <a href="./pages/portafolio.html">También puedes visitar mi portafolio general</a>
+                            </div> 
                         </div>
+                        
 
-                        <div class="col-xl-12 col-sm-12 divImgCont-Carosuel">
+                        <div class="col-xl-6 col-sm-12 divImgCont-Carosuel">
                             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
                                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -194,25 +193,25 @@
                                 </div>
                                 <div class="carousel-inner">
                                   <div class="carousel-item active" data-bs-interval="10000">
-                                    <a href="./pages/portafolioblancoynegro.html"><img src="./image/blancoynegro.jpg" height="700px" class="d-block w-100" alt="Imagen portafolio blanco y negro"></a>
+                                    <a href="./pages/portafolioblancoynegro.html"><img src="./image/blancoynegro.jpg" height="600px" class="d-block w-100" alt="Imagen portafolio blanco y negro"></a>
                                     <div class="carousel-caption ">
                                         <a href="./pages/portafolioblancoynegro.html"><p>B&N</p></a>
                                     </div>  
                                   </div>
                                   <div class="carousel-item" data-bs-interval="2000">
-                                    <a href="./pages/portafolioestudio.html"><img src="./image/portafolioEstudio/boro4.jpg" height="700px" class="d-block w-100" alt="Imagen portafolio de estudio"></a>
+                                    <a href="./pages/portafolioestudio.html"><img src="./image/portafolioEstudio/boro4.jpg" height="600px" class="d-block w-100" alt="Imagen portafolio de estudio"></a>
                                     <div class="carousel-caption ">
                                         <a href="./pages/portafolioestudio.html"><p>ESTUDIO</p></a>
                                     </div>
                                   </div>
                                   <div class="carousel-item">
-                                    <a href="./pages/portafoliourbano.html"><img src="./image/urbano18.jpg" height="700px" class="d-block w-100" alt="Imagen portafolio urbano"></a>
+                                    <a href="./pages/portafoliourbano.html"><img src="./image/urbano18.jpg" height="600px" class="d-block w-100" alt="Imagen portafolio urbano"></a>
                                     <div class="carousel-caption">
                                         <a href="./pages/portafoliourbano.html"><p>URBANO</p></a>
                                     </div>
                                   </div>
                                   <div class="carousel-item">
-                                    <a href="./pages/portafolioaventura.html"><img src="./image/aventura.jpeg" height="700px" class="d-block w-100" alt="Imagen portafolio aventura"></a>
+                                    <a href="./pages/portafolioaventura.html"><img src="./image/aventura.jpeg" height="600px" class="d-block w-100" alt="Imagen portafolio aventura"></a>
                                     <div class="carousel-caption">
                                         <a href="./pages/portafolioaventura.html"><p>AVENTURA</p></a>
                                     </div>
@@ -231,7 +230,8 @@
                                     <span class="visually-hidden">Next</span>
                                   </button>
                               </div>
-                        </div>
+                        </div> 
+                        
                       </div>
                     </div>
                 </section>

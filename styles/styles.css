@@ -24,8 +24,8 @@
 }
 
 header nav {
-  background-color: #acc0d4;
-  box-shadow: 0 0 5px #000;
+  background-color: #cbd8e4;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.607);
 }
 header nav div .title {
   font-size: 900;
@@ -34,7 +34,7 @@ header nav div .title {
   font-weight: 900;
   color: #222222;
   padding-left: 10px;
-  transition: all 500ms;
+  transition: all 400ms;
 }
 header nav div .title:hover {
   color: #ffffff;
@@ -48,27 +48,57 @@ header nav div div .contenOp-Li li {
   padding-right: 20px;
 }
 header nav div div .contenOp-Li li a {
-  color: #222222;
-  font-size: 15px;
+  color: rgba(51, 52, 52, 0.8078431373);
+  font-size: 13px;
+  transition: all 400ms;
+  font-weight: 500;
 }
 header nav div div .contenOp-Li li a:hover {
   color: #ffffff;
 }
+header nav div div .contenOp-Li li .opPortafolio-Ul {
+  margin-top: 20px;
+  background-color: #cbd8e4;
+  border: none;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.607);
+}
+header nav div div .contenOp-Li li .opPortafolio-Ul li {
+  margin: 5px;
+  padding: 5px;
+}
+header nav div div .contenOp-Li li .opPortafolio-Ul li a {
+  text-decoration: none;
+}
 
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+  max-width: 100%;
+  position: relative;
+}
+
+.img-uno {
+  background-image: url("/image/principal3.jpg");
+}
+
+/*--------------------------------------------------------------------*/
 .historia {
   box-shadow: 0 0 5px #000;
   margin-top: 170px;
   display: flex;
   justify-content: space-around;
   padding: 50px;
-  background-color: #acc0d4;
+  background-color: #a3c0de;
 }
 .historia .historia-Div div {
   display: flex;
   border: none;
   align-items: center;
   text-align: center;
-  background-color: #acc0d4;
+  background-color: #a3c0de;
   color: #222222;
   border-radius: 5px;
 }
@@ -79,21 +109,18 @@ header nav div div .contenOp-Li li a:hover {
   display: flex;
   flex-direction: column;
 }
-.historia .historia-Div div .contenidos-TEX section {
-  font-family: "Times New Roman", Times, serif;
-}
 .historia .historia-Div div .contenidos-TEX section h3 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
 }
 .historia .historia-Div div .contenidos-TEX section p {
-  font-size: 18px;
-  transition: all 500ms;
+  font-size: 15px;
+  font-weight: 100;
 }
 
 /*--------------------------------------------------------------------*/
 .logosRow {
-  background-color: #acc0d4;
+  background-color: #a3c0de;
   box-shadow: 0 0 5px #000;
 }
 .logosRow .logosImage-Div {
@@ -107,31 +134,39 @@ header nav div div .contenOp-Li li a:hover {
 
 /*--------------------------------------------------------------------*/
 .contenFila-Carousel {
-  margin-top: 170px;
+  margin-top: 100px;
   margin-bottom: 170px;
-  background-color: rgb(41, 40, 40);
-  box-shadow: 0 0 5px #000;
 }
 .contenFila-Carousel .carouselRow-Title {
-  background-color: rgb(50, 50, 50);
-  height: 100px;
-  box-shadow: 0 0 5px #000;
-  text-align: center;
   display: flex;
+  justify-content: left;
   align-items: center;
 }
-.contenFila-Carousel .carouselRow-Title h2 {
-  font-size: 40px;
-  padding-left: 30px;
-  margin: 0%;
-  font-weight: 900;
-  color: #ffffff;
-  font-family: "Bodoni Moda";
+.contenFila-Carousel .carouselRow-Title div {
+  border-radius: 5px;
+  color: #222222;
+}
+.contenFila-Carousel .carouselRow-Title div h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.contenFila-Carousel .carouselRow-Title div p {
+  width: 50%;
+  font-size: 15px;
+  font-weight: 100;
+}
+.contenFila-Carousel .carouselRow-Title div a {
+  text-decoration: none;
+  color: #222222;
+  transition: all 400ms;
+}
+.contenFila-Carousel .carouselRow-Title div a:hover {
+  color: #eb5e28;
 }
 .contenFila-Carousel .divImgCont-Carosuel {
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 550px;
+  width: 450px;
   padding: 0%;
   box-shadow: 0 0 10px #000;
   /*EXTENDS*/
@@ -153,7 +188,7 @@ header nav div div .contenOp-Li li a:hover {
   padding: 0%;
   font-family: "Bodoni Moda";
   font-weight: 900;
-  font-size: 60px;
+  font-size: 50px;
   color: #eb5e28;
 }
 
@@ -409,6 +444,7 @@ header nav div div .contenOp-Li li a:hover {
 
 .seccionIngresar {
   /*EXTENDS*/
+  margin-bottom: 115px;
 }
 .seccionIngresar fieldset div label {
   font-size: 10px;
@@ -480,4 +516,5 @@ header nav div div .contenOp-Li li a:hover {
 body {
   overflow: auto;
   background-color: #ffffff;
+  background-color: #EBE9EA;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,18 @@
+.parallax {
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:50rem;
+	max-width: 100%;
+	position: relative;
+}
+.img-uno {
+    background-image: url("/image/principal3.jpg");
+}
+
+/*--------------------------------------------------------------------*/
+
 .historia {
     box-shadow:  0 0 5px #000;
     margin-top: 170px;
@@ -22,14 +37,13 @@
                 flex-direction: column;
 
                 section {
-                    font-family: 'Times New Roman', Times, serif;
                     h3 {
-                        font-size: 25px;
+                        font-size: 22px;
                         font-weight: map-get($tamanos, fontmedium);
                     }
                     p {
-                        font-size: 18px;
-                        transition: all 500ms;
+                        font-size: 15px;
+                        font-weight: map-get($tamanos, fontsmall);
                     }
                 }
             }
@@ -57,40 +71,48 @@
 /*--------------------------------------------------------------------*/
 
 .contenFila-Carousel {
-    margin-top: 170px;
+    margin-top: 100px;
     margin-bottom:  170px;
-    background-color: rgb(41, 40, 40);
-    box-shadow:  0 0 5px #000;
     @extend %flexDisCenter;
 
     .carouselRow-Title {
-        background-color: rgb(50, 50, 50);
-        height: 100px;
-        box-shadow:  0 0 5px #000;
-        text-align: center;
         display: flex;
+        justify-content: left;
         align-items: center;
-        h2 {
-            font-size: 40px;
-            padding-left: 30px;
-            margin: 0%;
-            font-weight: map-get($tamanos, fontlarge);
-            color: map-get($colores, colorNavBar);
-            font-family: map-get($fontfamily, fontTitles);
+        div {
+            border-radius: 5px;
+            color: map-get($colores, colorBotones);
+            h2 {
+                font-size: 50px;
+                font-weight: map-get($tamanos, fontmedium);
+            }
+            p {
+                width: 50%;
+                font-size: 15px;
+                font-weight: map-get($tamanos, fontsmall);
+            }
+            a {
+                
+                text-decoration: none;
+                color: map-get($colores, colorBotones);
+                transition: all 400ms;
+                &:hover {
+                    color: map-get($colores, titlesDecoration);
+                }
+            }
         }
     }
 
     .divImgCont-Carosuel {
         margin-top: 100px;
         margin-bottom: 100px;
-        width: 550px;
+        width: 450px;
         padding: 0%;
         box-shadow:  0 0 10px #000;
         /*EXTENDS*/
         @extend %flexDisCenter;
         div{
             width: 100%;
-            
             .carousel-indicators {
                 margin: 0%;
             }
@@ -106,10 +128,11 @@
                     padding: 0%;
                     font-family: map-get($fontfamily, fontTitles);
                     font-weight: 900;
-                    font-size: 60px;
+                    font-size: 50px;
                     color: map-get($colores, titlesDecoration);
                 }
             }
         }
     }
+    
 }
