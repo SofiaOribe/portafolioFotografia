@@ -135,7 +135,7 @@ header nav div div .contenOp-Li li .opPortafolio-Ul li a {
 /*--------------------------------------------------------------------*/
 .contenFila-Carousel {
   margin-top: 100px;
-  margin-bottom: 170px;
+  margin-bottom: 100px;
 }
 .contenFila-Carousel .carouselRow-Title {
   display: flex;
@@ -464,7 +464,6 @@ header nav div div .contenOp-Li li .opPortafolio-Ul li a {
 }
 
 .rowBiblio {
-  margin-top: 100px;
   background-color: #222222;
   box-shadow: 0 0 40px #000000;
 }
