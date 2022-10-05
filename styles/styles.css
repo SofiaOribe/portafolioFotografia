@@ -70,18 +70,9 @@ header nav div div .contenOp-Li li .opPortafolio-Ul li a {
   text-decoration: none;
 }
 
-.parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50rem;
-  max-width: 100%;
-  position: relative;
-}
-
-.img-uno {
-  background-image: url("/image/principal3.jpg");
+.imagenPrincipal {
+  padding: 0%;
+  margin-top: 50px;
 }
 
 /*--------------------------------------------------------------------*/
