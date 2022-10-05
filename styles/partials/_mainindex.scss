@@ -8,7 +8,8 @@
 	position: relative;
 }
 .img-uno {
-    background-image: url("/image/principal3.jpg");
+    background-image: url('/image/principal3.jpg');
+    background-attachment: fixed;
 }
 
 /*--------------------------------------------------------------------*/
@@ -21,7 +22,7 @@
     padding: 50px;
     background-color: map-get($colores, intermedio);
     .historia-Div {
-        div {
+        div { 
             display: flex;
             border: none;
             align-items: center;
