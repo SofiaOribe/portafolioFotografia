@@ -2,7 +2,6 @@ header {
     nav {
         background-color: #cbd8e4;
         box-shadow: 0 0 35px rgba(0, 0, 0, 0.607);
-        
         div {
             .title {
                 font-size: map-get($tamanos, fontlarge);   
@@ -34,9 +33,10 @@ header {
                         }
                         .opPortafolio-Ul {
                             margin-top: 20px;
+                            margin-bottom: 20px;
                             background-color:  #cbd8e4;
                             border: none;
-                            box-shadow: 0 0 25px rgba(0, 0, 0, 0.607);
+                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.352);
                             li {
                                 margin: 5px;
                                 padding: 5px;

@@ -1,4 +1,4 @@
-.rowBiblio div, .seccionIngresar, .seccionesRow .segundoContenidoContacto div, .formCrearCuenta form, .contenidoBiblio, .portafolioGral div, .titlePages-Row, .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer section h4, .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer, .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset, .contenFila-Carousel .divImgCont-Carosuel div a p, .contenFila-Carousel .divImgCont-Carosuel, .contenFila-Carousel, .logosRow .logosImage-Div {
+.rowBiblio div, .seccionIngresar, .seccionesRow .segundoContenidoContacto div, .formCrearCuenta form, .contenidoBiblio, .portafolioGral div, .titlePages-Row, .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer section h4, .abarcadoUno .contenColumnas-Row .segundaSeccion-Footer, .abarcadoUno .contenColumnas-Row .primeraSeccion-Footer fieldset, .contenFila-Carousel .divImgCont-Carosuel, .contenFila-Carousel, .logosRow .logosImage-Div {
   display: flex;
   justify-content: center;
 }
@@ -58,9 +58,10 @@ header nav div div .contenOp-Li li a:hover {
 }
 header nav div div .contenOp-Li li .opPortafolio-Ul {
   margin-top: 20px;
+  margin-bottom: 20px;
   background-color: #cbd8e4;
   border: none;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.607);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.352);
 }
 header nav div div .contenOp-Li li .opPortafolio-Ul li {
   margin: 5px;
@@ -119,7 +120,11 @@ header nav div div .contenOp-Li li .opPortafolio-Ul li a {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.logosRow .logosImage-Div img {
+.logosRow .logosImage-Div div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.logosRow .logosImage-Div div img {
   height: 50px;
 }
 
@@ -138,8 +143,10 @@ header nav div div .contenOp-Li li .opPortafolio-Ul li a {
   color: #222222;
 }
 .contenFila-Carousel .carouselRow-Title div h2 {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Bodoni Moda";
+  color: #eb5e28;
 }
 .contenFila-Carousel .carouselRow-Title div p {
   width: 50%;
@@ -167,20 +174,6 @@ header nav div div .contenOp-Li li .opPortafolio-Ul li a {
 }
 .contenFila-Carousel .divImgCont-Carosuel div .carousel-indicators {
   margin: 0%;
-}
-.contenFila-Carousel .divImgCont-Carosuel div a {
-  text-decoration: none;
-}
-.contenFila-Carousel .divImgCont-Carosuel div a p {
-  text-decoration: none;
-  /*EXTENDS*/
-  margin-right: 30%;
-  margin-bottom: 50%;
-  padding: 0%;
-  font-family: "Bodoni Moda";
-  font-weight: 900;
-  font-size: 50px;
-  color: #eb5e28;
 }
 
 .abarcadoUno {
