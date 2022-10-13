@@ -167,6 +167,7 @@ header nav div div .contenOp-Li li .opPortafolio-Ul li a {
   width: 450px;
   padding: 0%;
   box-shadow: 0 0 10px #000;
+  transition: all 500ms ease-out;
   /*EXTENDS*/
 }
 .contenFila-Carousel .divImgCont-Carosuel div {
@@ -264,6 +265,7 @@ header nav div div .contenOp-Li li .opPortafolio-Ul li a {
 .titlePages-Row h5 {
   color: #000;
   font-family: "Bodoni Moda";
+  font-weight: 900;
 }
 
 .portafolioGral div {
@@ -272,7 +274,6 @@ header nav div div .contenOp-Li li .opPortafolio-Ul li a {
 .portafolioGral div div {
   width: 500px;
   padding: 0%;
-  transition: all 500ms ease-out;
   position: relative;
   overflow: hidden;
 }

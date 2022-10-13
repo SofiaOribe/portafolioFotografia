@@ -109,6 +109,7 @@
         width: 450px;
         padding: 0%;
         box-shadow:  0 0 10px #000;
+        transition: all 500ms ease-out;
         /*EXTENDS*/
         @extend %flexDisCenter;
         div{
